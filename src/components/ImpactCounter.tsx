@@ -45,6 +45,12 @@ export function ImpactCounter({
     terracotta: "text-terracotta",
   };
 
+  const lineColor = {
+    olive: "bg-olive/60",
+    mustard: "bg-mustard/60",
+    terracotta: "bg-terracotta/60",
+  };
+
   return (
     <motion.div
       ref={ref}
@@ -54,12 +60,19 @@ export function ImpactCounter({
       transition={{ duration: 0.6 }}
       className="text-center"
     >
-      <div className={`text-5xl sm:text-6xl font-black ${colorMap[color]} leading-none`}>
+      <div className={`text-6xl sm:text-7xl font-black ${colorMap[color]} leading-none tabular-nums`}>
         {count.toLocaleString("tr-TR")}
         {suffix}
       </div>
-      <div className="mt-3 text-lg font-bold text-ink">{label}</div>
-      {sublabel && <div className="mt-1 text-sm text-ink/50">{sublabel}</div>}
+      <motion.div
+        initial={{ scaleX: 0, opacity: 0 }}
+        whileInView={{ scaleX: 1, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+        className={`h-0.5 w-16 ${lineColor[color]} rounded-full mx-auto mt-3 mb-3 origin-left`}
+      />
+      <div className="text-base font-bold text-white/90">{label}</div>
+      {sublabel && <div className="mt-1 text-sm text-white/40">{sublabel}</div>}
     </motion.div>
   );
 }

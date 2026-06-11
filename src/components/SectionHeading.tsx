@@ -8,6 +8,7 @@ interface SectionHeadingProps {
   subtitle?: string;
   center?: boolean;
   className?: string;
+  theme?: "light" | "dark";
 }
 
 export function SectionHeading({
@@ -16,7 +17,9 @@ export function SectionHeading({
   subtitle,
   center = true,
   className = "",
+  theme = "light",
 }: SectionHeadingProps) {
+  const isDark = theme === "dark";
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -26,15 +29,31 @@ export function SectionHeading({
       className={`${center ? "text-center" : ""} mb-12 ${className}`}
     >
       {label && (
-        <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-olive mb-3">
+        <span
+          className={`inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.18em] px-3 py-1.5 rounded-full mb-4 ${
+            isDark ? "bg-white/10 text-white/70" : "bg-olive/10 text-olive"
+          }`}
+        >
+          <span
+            className={`w-1 h-1 rounded-full flex-shrink-0 ${isDark ? "bg-white/50" : "bg-olive"}`}
+            aria-hidden="true"
+          />
           {label}
         </span>
       )}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-ink leading-tight text-balance">
+      <h2
+        className={`text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-balance ${
+          isDark ? "text-white" : "text-ink"
+        }`}
+      >
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-lg text-ink/60 max-w-2xl leading-relaxed text-balance mx-auto">
+        <p
+          className={`mt-4 text-lg max-w-2xl leading-relaxed text-balance ${center ? "mx-auto" : ""} ${
+            isDark ? "text-white/60" : "text-ink/60"
+          }`}
+        >
           {subtitle}
         </p>
       )}

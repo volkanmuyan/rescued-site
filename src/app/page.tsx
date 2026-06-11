@@ -42,27 +42,39 @@ const stagger = {
 const benefits = [
   {
     icon: Tag,
+    number: "01",
     title: "Yarı fiyat ve altı",
     desc: "Kaliteli yemeği bütçeni sarsmadan al. Her Sürpriz Paket piyasa değerinin en az %50 altında.",
-    color: "bg-olive/10 text-olive",
+    accent: "from-olive to-olive-light",
+    iconBg: "bg-olive/10",
+    iconColor: "text-olive",
   },
   {
     icon: MapPin,
+    number: "02",
     title: "Hemen yakınında",
     desc: "Mahallendeki fırından, kafeden, marketten — yürüme mesafesindeki işletmelerden kurtar.",
-    color: "bg-mustard/10 text-mustard",
+    accent: "from-mustard to-mustard/50",
+    iconBg: "bg-mustard/10",
+    iconColor: "text-mustard",
   },
   {
     icon: Globe,
+    number: "03",
     title: "Gezegen için",
     desc: "Her paket, önlenen CO₂e demek. Yemeğin kurtarıldığında ne kadar karbon tasarrufu ettiğini görürsün.",
-    color: "bg-terracotta/10 text-terracotta",
+    accent: "from-terracotta to-terracotta/50",
+    iconBg: "bg-terracotta/10",
+    iconColor: "text-terracotta",
   },
   {
     icon: Sparkles,
+    number: "04",
     title: "Yeni lezzetler keşfet",
     desc: "Daha önce hiç girmediğin o pastaneyi, o mahalle fırınını Sürpriz Paket sayesinde keşfet.",
-    color: "bg-olive/10 text-olive-dark",
+    accent: "from-olive-dark to-olive",
+    iconBg: "bg-olive/10",
+    iconColor: "text-olive-dark",
   },
 ];
 
@@ -142,8 +154,18 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ink">
         {/* Gerçek video buraya gelecek: yemek hazırlığı / fırın / paket sahneleri */}
         <div className="absolute inset-0 bg-gradient-to-br from-ink via-olive-dark/80 to-ink/90" aria-hidden="true" />
-        <div className="absolute top-1/4 right-10 w-64 h-64 bg-olive/20 rounded-full blur-3xl" aria-hidden="true" />
-        <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-mustard/10 rounded-full blur-3xl" aria-hidden="true" />
+        <motion.div
+          className="absolute top-1/4 right-10 w-64 h-64 bg-olive/20 rounded-full blur-3xl"
+          animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.3, 0.2] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          aria-hidden="true"
+        />
+        <motion.div
+          className="absolute bottom-1/4 left-10 w-96 h-96 bg-mustard/10 rounded-full blur-3xl"
+          animate={{ scale: [1, 1.12, 1], opacity: [0.1, 0.18, 0.1] }}
+          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 3 }}
+          aria-hidden="true"
+        />
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto pt-20">
           <motion.div initial="hidden" animate="visible" variants={stagger} className="flex flex-col items-center gap-6">
@@ -175,12 +197,35 @@ export default function HomePage() {
         </div>
 
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
           aria-hidden="true"
         >
-          <ChevronDown size={28} className="text-white/40" />
+          <span className="text-white/30 text-[10px] font-bold uppercase tracking-[0.2em]">Keşfet</span>
+          <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
+            <ChevronDown size={13} className="text-white/50" />
+          </div>
+        </motion.div>
+
+        {/* Floating social proof */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.4, duration: 0.6, ease: "easeOut" }}
+          className="absolute bottom-28 right-8 sm:right-16 hidden sm:flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3"
+        >
+          <div className="flex -space-x-2">
+            {["A", "M", "Z"].map((c, k) => (
+              <div key={k} className="w-7 h-7 rounded-full bg-gradient-to-br from-olive to-olive-dark border-2 border-ink flex items-center justify-center text-white text-[10px] font-black">
+                {c}
+              </div>
+            ))}
+          </div>
+          <div>
+            <div className="text-white text-xs font-bold leading-tight">18.500+ kullanıcı</div>
+            <div className="text-white/50 text-[10px]">bekleme listesinde</div>
+          </div>
         </motion.div>
       </section>
 
@@ -222,10 +267,14 @@ export default function HomePage() {
               <motion.div
                 key={b.title}
                 variants={fadeUp}
-                className="bg-white rounded-3xl p-7 shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300"
+                className="group relative bg-white rounded-3xl p-7 shadow-soft hover:shadow-soft-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden border border-transparent hover:border-olive/10"
               >
-                <div className={`w-12 h-12 rounded-2xl ${b.color} flex items-center justify-center mb-5`}>
-                  <b.icon size={22} aria-hidden="true" />
+                <div className={`absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r ${b.accent} rounded-t-3xl`} />
+                <span className="absolute top-4 right-5 text-6xl font-black text-ink/[0.035] select-none leading-none pointer-events-none">
+                  {b.number}
+                </span>
+                <div className={`w-12 h-12 rounded-2xl ${b.iconBg} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                  <b.icon size={22} className={b.iconColor} aria-hidden="true" />
                 </div>
                 <h3 className="text-lg font-black text-ink mb-2">{b.title}</h3>
                 <p className="text-sm text-ink/60 leading-relaxed">{b.desc}</p>
@@ -257,17 +306,21 @@ export default function HomePage() {
                 className="relative"
               >
                 {i < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-[calc(100%_-_16px)] w-8 h-0.5 bg-olive/20 z-10" aria-hidden="true" />
-                )}
-                <div className="bg-white rounded-3xl p-7 shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-3 mb-5">
-                    <span className="text-xs font-black text-olive/40 tracking-wider">{step.number}</span>
-                    <div className="w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center">
-                      <step.icon size={18} className="text-olive" aria-hidden="true" />
-                    </div>
+                  <div className="hidden lg:flex absolute top-10 left-[calc(100%_-_12px)] w-8 items-center z-10" aria-hidden="true">
+                    <div className="h-px w-full bg-gradient-to-r from-olive/30 to-olive/10" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-olive/25 flex-shrink-0" />
                   </div>
-                  <h3 className="text-xl font-black text-ink mb-2">{step.title}</h3>
-                  <p className="text-sm text-ink/60 leading-relaxed">{step.desc}</p>
+                )}
+                <div className="group bg-white rounded-3xl p-7 shadow-soft hover:shadow-soft-xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden border border-transparent hover:border-olive/10">
+                  <div className="absolute -bottom-8 -right-8 w-28 h-28 bg-olive/[0.05] rounded-full group-hover:scale-150 group-hover:bg-olive/[0.08] transition-all duration-700" />
+                  <div className="flex items-start justify-between mb-5">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-olive to-olive-dark flex items-center justify-center shadow-soft group-hover:shadow-soft-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0">
+                      <step.icon size={20} className="text-white" aria-hidden="true" />
+                    </div>
+                    <span className="text-5xl font-black text-ink/[0.05] leading-none select-none">{step.number}</span>
+                  </div>
+                  <h3 className="text-xl font-black text-ink mb-2 relative z-10">{step.title}</h3>
+                  <p className="text-sm text-ink/60 leading-relaxed relative z-10">{step.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -283,6 +336,7 @@ export default function HomePage() {
             label="Etki"
             title="Birlikte yarattığımız fark"
             subtitle="Her paket, gerçek bir etki. İşte o etki, sayılarla."
+            theme="dark"
           />
           <div className="grid sm:grid-cols-3 gap-12">
             <ImpactCounter value={47820} suffix="+" label="Kurtarılan Öğün" sublabel="ve her gün artıyor" color="olive" />
@@ -311,11 +365,12 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-3xl p-8 shadow-soft text-center"
+                className="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 text-center overflow-hidden relative border border-transparent hover:border-olive/10"
               >
-                <div className="text-4xl mb-4">{stat.icon}</div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-olive/[0.05] rounded-full group-hover:scale-150 transition-transform duration-700" />
+                <div className="text-5xl mb-4">{stat.icon}</div>
                 <div className="text-3xl font-black text-olive mb-3">{stat.value}</div>
-                <p className="text-sm text-ink/60 leading-relaxed">{stat.desc}</p>
+                <p className="text-sm text-ink/60 leading-relaxed relative z-10">{stat.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -416,6 +471,7 @@ export default function HomePage() {
             label="Topluluk"
             title="Yüzlerce işletme Rescued ile israfla mücadele ediyor"
             subtitle="Kullanıcılardan ve işletmelerden gelen ses."
+            theme="dark"
           />
           {/* Partner logolar — gerçek logolar buraya gelecek */}
           <div className="flex flex-wrap justify-center gap-6 mb-14" aria-label="Partner işletme logoları">
@@ -432,12 +488,17 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm rounded-3xl p-7 border border-white/10"
+                transition={{ delay: i * 0.12 }}
+                className="bg-white/10 backdrop-blur-sm rounded-3xl p-7 border border-white/15 hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
-                <p className="text-white/90 text-sm leading-relaxed mb-5 italic">&ldquo;{t.text}&rdquo;</p>
+                <div className="flex gap-0.5 mb-4">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <span key={j} className="text-mustard text-sm leading-none">★</span>
+                  ))}
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed mb-5 flex-1">&ldquo;{t.text}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center text-white font-black text-sm">
+                  <div className="w-10 h-10 bg-gradient-to-br from-white/25 to-white/10 rounded-full flex items-center justify-center text-white font-black text-sm flex-shrink-0 border border-white/20">
                     {t.name[0]}
                   </div>
                   <div>
