@@ -1,12 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Mail, MapPin, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ContactForm } from "@/components/ContactForm";
 import { RescuedBadge } from "@/components/RescuedBadge";
+import { Link } from "@/i18n/navigation";
 
 export default function IletisimPage() {
+  const t = useTranslations("IletisimPage");
+
+  const contactItems = [
+    { icon: Mail, label: t("info.email"), value: t("info.emailValue") },
+    { icon: MapPin, label: t("info.address"), value: t("info.addressValue") },
+    { icon: Clock, label: t("info.responseTime"), value: t("info.responseTimeValue") },
+  ];
+
   return (
     <>
       <section className="pt-32 pb-20 bg-ink relative overflow-hidden">
@@ -15,10 +25,10 @@ export default function IletisimPage() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center gap-6">
             <RescuedBadge size="lg" className="!bg-white/15 border border-white/20" />
             <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight">
-              İletişim
+              {t("hero.title")}
             </h1>
             <p className="text-lg text-white/70">
-              Bir sorun mu var, bir fikrin mi var? Her mesaj okunur.
+              {t("hero.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -28,19 +38,15 @@ export default function IletisimPage() {
         <div className="container-wide mx-auto">
           <div className="grid lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
-              <SectionHeading label="Bize Ulaş" title="Mesajını gönder" center={false} />
+              <SectionHeading label={t("form.label")} title={t("form.title")} center={false} />
               <div className="bg-white rounded-3xl p-8 shadow-soft">
                 <ContactForm />
               </div>
             </div>
 
             <div className="space-y-5">
-              <SectionHeading label="Bilgiler" title="İletişim Bilgileri" center={false} className="mb-6" />
-              {[
-                { icon: Mail, label: "E-posta", value: "merhaba@rescued.com.tr" },
-                { icon: MapPin, label: "Adres", value: "İstanbul, Türkiye" },
-                { icon: Clock, label: "Yanıt süresi", value: "Genellikle 24 saat içinde" },
-              ].map((item, i) => (
+              <SectionHeading label={t("info.label")} title={t("info.title")} center={false} className="mb-6" />
+              {contactItems.map((item, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, x: 20 }}
@@ -61,10 +67,10 @@ export default function IletisimPage() {
 
               <div className="bg-olive/5 rounded-2xl p-5 border border-olive/10 mt-4">
                 <p className="text-sm text-ink/60 leading-relaxed">
-                  İşletme kaydı için ayrı bir form var —{" "}
-                  <a href="/isletmeler#kayit" className="text-olive font-bold hover:underline">
-                    buradan başvur
-                  </a>
+                  {t("info.businessNote")}{" "}
+                  <Link href="/isletmeler#kayit" className="text-olive font-bold hover:underline">
+                    {t("info.businessLink")}
+                  </Link>
                   .
                 </p>
               </div>

@@ -1,35 +1,23 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import { Menu, X, Leaf, Smartphone, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const hakkimizdaDropdown = [
-  { label: "Hikâyemiz", href: "/hakkimizda/hikayemiz" },
-  { label: "Etki Raporu", href: "/hakkimizda/etki-raporu" },
-  { label: "Nerelerdeyiz", href: "/hakkimizda/nerelerdeyiz" },
-  { label: "Ekibimiz", href: "/hakkimizda/ekip" },
-];
-
-const navLinks = [
-  { label: "Nasıl Çalışır", href: "/#nasil-calisir" },
-  { label: "Sürpriz Paket Nedir", href: "/surpriz-paket-nedir" },
-  { label: "Sürdürülebilirlik", href: "/surdurulebilirlik" },
-  { label: "İşletmeler", href: "/isletmeler" },
-];
-
-const mobileAllLinks = [
-  { label: "Nasıl Çalışır", href: "/#nasil-calisir" },
-  { label: "Sürpriz Paket Nedir", href: "/surpriz-paket-nedir" },
-  { label: "Hakkımızda", href: "/hakkimizda" },
-  { label: "Sürdürülebilirlik", href: "/surdurulebilirlik" },
-  { label: "İşletmeler", href: "/isletmeler" },
-];
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
 
 function HakkimizdaDropdown() {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const t = useTranslations("Navbar");
+
+  const dropdownItems = [
+    { key: "ourStory", href: "/hakkimizda/hikayemiz" },
+    { key: "impactReport", href: "/hakkimizda/etki-raporu" },
+    { key: "whereWeAre", href: "/hakkimizda/nerelerdeyiz" },
+    { key: "ourTeam", href: "/hakkimizda/ekip" },
+  ];
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -51,7 +39,7 @@ function HakkimizdaDropdown() {
         aria-expanded={open}
         aria-haspopup="true"
       >
-        Hakkımızda
+        {t("about")}
         <motion.div animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.18 }}>
           <ChevronDown size={14} />
         </motion.div>
@@ -71,17 +59,17 @@ function HakkimizdaDropdown() {
               onClick={() => setOpen(false)}
               className="block px-4 py-2.5 text-sm font-bold text-ink hover:bg-cream hover:text-olive transition-colors"
             >
-              Genel Bakış
+              {t("aboutDropdown.overview")}
             </Link>
             <div className="h-px bg-olive/10 mx-3 my-1" />
-            {hakkimizdaDropdown.map((item) => (
+            {dropdownItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className="block px-4 py-2.5 text-sm font-semibold text-ink/70 hover:bg-cream hover:text-olive transition-colors"
               >
-                {item.label}
+                {t(`aboutDropdown.${item.key}`)}
               </Link>
             ))}
           </motion.div>
@@ -91,10 +79,68 @@ function HakkimizdaDropdown() {
   );
 }
 
+function LocaleSwitcher() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const isTr = !pathname.startsWith("/en");
+
+  const handleSwitch = (locale: "tr" | "en") => {
+    const path = pathname.replace(/^\/(en|tr)/, "") || "/";
+    router.push(path, { locale });
+  };
+
+  return (
+    <div className="flex items-center gap-1 border border-ink/10 rounded-xl p-0.5">
+      <button
+        onClick={() => handleSwitch("tr")}
+        className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all ${
+          isTr ? "bg-olive text-white shadow-sm" : "text-ink/50 hover:text-ink/80"
+        }`}
+        aria-label="Türkçe"
+      >
+        TR
+      </button>
+      <button
+        onClick={() => handleSwitch("en")}
+        className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all ${
+          !isTr ? "bg-olive text-white shadow-sm" : "text-ink/50 hover:text-ink/80"
+        }`}
+        aria-label="English"
+      >
+        EN
+      </button>
+    </div>
+  );
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileHakkiOpen, setMobileHakkiOpen] = useState(false);
+  const t = useTranslations("Navbar");
+
+  const navLinks = [
+    { key: "howItWorks", href: "/#nasil-calisir" },
+    { key: "surpriseBag", href: "/surpriz-paket-nedir" },
+    { key: "sustainability", href: "/surdurulebilirlik" },
+    { key: "forBusinesses", href: "/isletmeler" },
+  ];
+
+  const mobileNavLinks = [
+    { key: "howItWorks", href: "/#nasil-calisir" },
+    { key: "surpriseBag", href: "/surpriz-paket-nedir" },
+    { key: "about", href: null },
+    { key: "sustainability", href: "/surdurulebilirlik" },
+    { key: "forBusinesses", href: "/isletmeler" },
+  ];
+
+  const mobileDropdownItems = [
+    { key: "ourStory", href: "/hakkimizda/hikayemiz" },
+    { key: "impactReport", href: "/hakkimizda/etki-raporu" },
+    { key: "whereWeAre", href: "/hakkimizda/nerelerdeyiz" },
+    { key: "ourTeam", href: "/hakkimizda/ekip" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -119,7 +165,7 @@ export function Navbar() {
       >
         <div className="container-wide px-4 sm:px-6 lg:px-8 mx-auto flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group" aria-label="Rescued ana sayfa">
+          <Link href="/" className="flex items-center gap-2 group" aria-label="Rescued">
             <div className="w-8 h-8 bg-olive rounded-xl flex items-center justify-center group-hover:bg-olive-dark transition-colors duration-200">
               <Leaf size={18} className="text-white" aria-hidden="true" />
             </div>
@@ -127,26 +173,27 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1" aria-label="Ana menü">
+          <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="px-4 py-2 text-sm font-semibold text-ink/70 hover:text-olive rounded-xl hover:bg-olive/10 transition-all duration-200"
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
             <HakkimizdaDropdown />
           </nav>
 
-          {/* CTA */}
+          {/* CTA + locale switcher */}
           <div className="hidden md:flex items-center gap-3">
+            <LocaleSwitcher />
             <button className="relative flex items-center gap-2 bg-olive text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-olive-dark transition-all duration-200 shadow-soft hover:shadow-soft-lg hover:-translate-y-0.5">
               <Smartphone size={15} aria-hidden="true" />
-              Uygulamayı İndir
+              {t("downloadApp")}
               <span className="absolute -top-1.5 -right-1.5 bg-mustard text-ink text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none">
-                Yakında
+                {t("comingSoon")}
               </span>
             </button>
           </div>
@@ -155,7 +202,7 @@ export function Navbar() {
           <button
             className="md:hidden w-10 h-10 flex items-center justify-center rounded-xl hover:bg-olive/10 transition-colors"
             onClick={() => setMobileOpen(true)}
-            aria-label="Menüyü aç"
+            aria-label="Open menu"
             aria-expanded={mobileOpen}
           >
             <Menu size={22} className="text-ink" />
@@ -180,25 +227,28 @@ export function Navbar() {
                 </div>
                 <span className="text-xl font-black text-ink">Rescued</span>
               </Link>
-              <button
-                className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-olive/10 transition-colors"
-                onClick={() => setMobileOpen(false)}
-                aria-label="Menüyü kapat"
-              >
-                <X size={22} className="text-ink" />
-              </button>
+              <div className="flex items-center gap-3">
+                <LocaleSwitcher />
+                <button
+                  className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-olive/10 transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                  aria-label="Close menu"
+                >
+                  <X size={22} className="text-ink" />
+                </button>
+              </div>
             </div>
 
-            <nav className="flex-1 flex flex-col justify-center px-8 gap-1" aria-label="Mobil menü">
-              {mobileAllLinks.map((link, i) => {
-                if (link.label === "Hakkımızda") {
+            <nav className="flex-1 flex flex-col justify-center px-8 gap-1" aria-label="Mobile navigation">
+              {mobileNavLinks.map((link, i) => {
+                if (link.key === "about") {
                   return (
                     <motion.div key="hakki" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 }}>
                       <button
                         className="flex items-center justify-between w-full text-3xl font-black text-ink hover:text-olive transition-colors py-3"
                         onClick={() => setMobileHakkiOpen((o) => !o)}
                       >
-                        Hakkımızda
+                        {t("about")}
                         <motion.div animate={{ rotate: mobileHakkiOpen ? 180 : 0 }} transition={{ duration: 0.18 }}>
                           <ChevronDown size={20} />
                         </motion.div>
@@ -212,10 +262,12 @@ export function Navbar() {
                             transition={{ duration: 0.2 }}
                             className="overflow-hidden pl-4 border-l-2 border-olive/20 mb-2"
                           >
-                            <Link href="/hakkimizda" className="block text-lg font-bold text-ink/70 hover:text-olive py-2 transition-colors" onClick={() => setMobileOpen(false)}>Genel Bakış</Link>
-                            {hakkimizdaDropdown.map((item) => (
+                            <Link href="/hakkimizda" className="block text-lg font-bold text-ink/70 hover:text-olive py-2 transition-colors" onClick={() => setMobileOpen(false)}>
+                              {t("aboutDropdown.overview")}
+                            </Link>
+                            {mobileDropdownItems.map((item) => (
                               <Link key={item.href} href={item.href} className="block text-lg font-semibold text-ink/60 hover:text-olive py-2 transition-colors" onClick={() => setMobileOpen(false)}>
-                                {item.label}
+                                {t(`aboutDropdown.${item.key}`)}
                               </Link>
                             ))}
                           </motion.div>
@@ -225,9 +277,9 @@ export function Navbar() {
                   );
                 }
                 return (
-                  <motion.div key={link.href} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 }}>
-                    <Link href={link.href} className="block text-3xl font-black text-ink hover:text-olive transition-colors py-3" onClick={() => setMobileOpen(false)}>
-                      {link.label}
+                  <motion.div key={link.key} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 }}>
+                    <Link href={link.href!} className="block text-3xl font-black text-ink hover:text-olive transition-colors py-3" onClick={() => setMobileOpen(false)}>
+                      {t(link.key)}
                     </Link>
                   </motion.div>
                 );
@@ -237,9 +289,9 @@ export function Navbar() {
             <div className="px-8 pb-12 flex-shrink-0">
               <button className="w-full relative flex items-center justify-center gap-2 bg-olive text-white font-bold py-4 rounded-2xl text-lg hover:bg-olive-dark transition-colors">
                 <Smartphone size={18} />
-                Uygulamayı İndir
+                {t("downloadApp")}
                 <span className="absolute -top-2 right-4 bg-mustard text-ink text-[9px] font-bold px-2 py-0.5 rounded-full">
-                  Yakında
+                  {t("comingSoon")}
                 </span>
               </button>
             </div>

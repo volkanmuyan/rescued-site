@@ -3,16 +3,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const t = useTranslations("WaitlistForm");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setStatus("loading");
-    // Placeholder — gerçek entegrasyon sonraki fazda
     await new Promise((r) => setTimeout(r, 900));
     setStatus("success");
   };
@@ -27,22 +28,22 @@ export function WaitlistForm() {
           className="flex items-center gap-3 bg-olive/10 text-olive font-bold px-6 py-4 rounded-2xl"
         >
           <CheckCircle2 size={22} />
-          <span>Harika! Uygulama çıktığında seni ilk haberdar edeceğiz.</span>
+          <span>{t("successMessage")}</span>
         </motion.div>
       ) : (
         <motion.form
           key="form"
           onSubmit={handleSubmit}
           className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          aria-label="Bekleme listesi formu"
+          aria-label={t("formLabel")}
         >
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-posta adresin"
+            placeholder={t("emailPlaceholder")}
             required
-            aria-label="E-posta adresin"
+            aria-label={t("emailLabel")}
             className="flex-1 px-5 py-3.5 rounded-full bg-white border border-olive/20 focus:border-olive focus:outline-none focus:ring-2 focus:ring-olive/20 text-ink placeholder-ink/40 text-sm font-medium transition-all"
           />
           <button
@@ -59,7 +60,7 @@ export function WaitlistForm() {
             ) : (
               <Send size={15} />
             )}
-            Haberdar Et
+            {t("submitButton")}
           </button>
         </motion.form>
       )}

@@ -1,64 +1,67 @@
 "use client";
 
-import Link from "next/link";
 import { Leaf, Share2, MessageCircle, AtSign, Users } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { AppButtons } from "./AppButtons";
 
-const footerLinks = {
-  kesfet: {
-    title: "Keşfet",
-    links: [
-      { label: "Sürpriz Paket Nedir", href: "/surpriz-paket-nedir" },
-      { label: "Sürdürülebilirlik", href: "/surdurulebilirlik" },
-      { label: "İşletmeler", href: "/isletmeler" },
-      { label: "SSS", href: "/sss" },
-    ],
-  },
-  hakkimizda: {
-    title: "Hakkımızda",
-    links: [
-      { label: "Genel Bakış", href: "/hakkimizda" },
-      { label: "Hikâyemiz", href: "/hakkimizda/hikayemiz" },
-      { label: "Etki Raporu", href: "/hakkimizda/etki-raporu" },
-      { label: "Nerelerdeyiz", href: "/hakkimizda/nerelerdeyiz" },
-      { label: "Ekibimiz", href: "/hakkimizda/ekip" },
-    ],
-  },
-  isletmeler: {
-    title: "İşletmeler",
-    links: [
-      { label: "Nasıl Çalışır", href: "/isletmeler" },
-      { label: "İşletme Kaydı", href: "/isletmeler#kayit" },
-      { label: "İşletme Girişi", href: "/isletmeler#giris" },
-    ],
-  },
-  destek: {
-    title: "Destek",
-    links: [
-      { label: "İletişim", href: "/iletisim" },
-      { label: "Basın", href: "/basin" },
-      { label: "Kariyer", href: "/kariyer" },
-    ],
-  },
-};
-
-const yasal = [
-  { label: "Gizlilik Politikası", href: "/yasal/gizlilik" },
-  { label: "Çerez Politikası", href: "/yasal/cerez-politikasi" },
-  { label: "Kullanım Koşulları", href: "/yasal/kullanim-kosullari" },
-  { label: "KVKK Aydınlatma Metni", href: "/yasal/kvkk" },
-];
-
 const socialLinks = [
-  { icon: AtSign, label: "Instagram", href: "https://instagram.com/rescuedtr" },
-  { icon: MessageCircle, label: "Twitter / X", href: "https://twitter.com/rescuedtr" },
-  { icon: Users, label: "Facebook", href: "https://facebook.com/rescuedtr" },
-  { icon: Share2, label: "LinkedIn", href: "https://linkedin.com/company/rescuedtr" },
+  { icon: AtSign, key: "instagram", href: "https://instagram.com/rescuedtr" },
+  { icon: MessageCircle, key: "twitter", href: "https://twitter.com/rescuedtr" },
+  { icon: Users, key: "facebook", href: "https://facebook.com/rescuedtr" },
+  { icon: Share2, key: "linkedin", href: "https://linkedin.com/company/rescuedtr" },
 ];
 
 export function Footer() {
+  const t = useTranslations("Footer");
+
+  const footerSections = [
+    {
+      titleKey: "discover",
+      links: [
+        { key: "surpriseBagWhat", href: "/surpriz-paket-nedir" },
+        { key: "sustainability", href: "/surdurulebilirlik" },
+        { key: "forBusinesses", href: "/isletmeler" },
+        { key: "faq", href: "/sss" },
+      ],
+    },
+    {
+      titleKey: "about",
+      links: [
+        { key: "overview", href: "/hakkimizda" },
+        { key: "ourStory", href: "/hakkimizda/hikayemiz" },
+        { key: "impactReport", href: "/hakkimizda/etki-raporu" },
+        { key: "whereWeAre", href: "/hakkimizda/nerelerdeyiz" },
+        { key: "ourTeam", href: "/hakkimizda/ekip" },
+      ],
+    },
+    {
+      titleKey: "businesses",
+      links: [
+        { key: "howItWorks", href: "/isletmeler" },
+        { key: "businessRegistration", href: "/isletmeler#kayit" },
+        { key: "businessLogin", href: "/isletmeler#giris" },
+      ],
+    },
+    {
+      titleKey: "support",
+      links: [
+        { key: "contact", href: "/iletisim" },
+        { key: "press", href: "/basin" },
+        { key: "careers", href: "/kariyer" },
+      ],
+    },
+  ];
+
+  const yasalLinks = [
+    { key: "privacyPolicy", href: "/yasal/gizlilik" },
+    { key: "cookiePolicy", href: "/yasal/cerez-politikasi" },
+    { key: "termsOfService", href: "/yasal/kullanim-kosullari" },
+    { key: "kvkk", href: "/yasal/kvkk" },
+  ];
+
   return (
-    <footer className="bg-ink text-white pt-16 pb-8" aria-label="Site alt bilgi">
+    <footer className="bg-ink text-white pt-16 pb-8" aria-label="Site footer">
       <div className="container-wide px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Top grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-white/10">
@@ -71,16 +74,16 @@ export function Footer() {
               <span className="text-xl font-black tracking-tight">Rescued</span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
-              Daha iyisi çöpe gitmesin. Çevrendeki işletmelerin gün sonu lezzetlerini yarı fiyatına kurtarıyoruz.
+              {t("tagline")}
             </p>
             <AppButtons showLabel={true} />
             {/* Social */}
             <div className="flex gap-3 mt-6">
-              {socialLinks.map(({ icon: Icon, label, href }) => (
+              {socialLinks.map(({ icon: Icon, key, href }) => (
                 <a
-                  key={label}
+                  key={key}
                   href={href}
-                  aria-label={label}
+                  aria-label={t(key)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-xl bg-white/10 hover:bg-olive transition-colors flex items-center justify-center"
@@ -92,10 +95,10 @@ export function Footer() {
           </div>
 
           {/* Link columns */}
-          {Object.values(footerLinks).map((section) => (
-            <div key={section.title}>
+          {footerSections.map((section) => (
+            <div key={section.titleKey}>
               <h3 className="text-sm font-bold text-white/40 uppercase tracking-widest mb-4">
-                {section.title}
+                {t(section.titleKey)}
               </h3>
               <ul className="space-y-3">
                 {section.links.map((link) => (
@@ -104,7 +107,7 @@ export function Footer() {
                       href={link.href}
                       className="text-sm text-white/70 hover:text-white transition-colors"
                     >
-                      {link.label}
+                      {t(link.key)}
                     </Link>
                   </li>
                 ))}
@@ -116,16 +119,16 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            © {new Date().getFullYear()} Rescued. Tüm hakları saklıdır.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            {yasal.map((link) => (
+            {yasalLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="text-xs text-white/40 hover:text-white/70 transition-colors"
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
           </div>

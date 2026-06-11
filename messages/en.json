@@ -1,0 +1,841 @@
+{
+  "Navbar": {
+    "howItWorks": "How It Works",
+    "surpriseBag": "What Is a Surprise Bag",
+    "sustainability": "Sustainability",
+    "forBusinesses": "For Businesses",
+    "about": "About",
+    "downloadApp": "Download App",
+    "comingSoon": "Coming Soon",
+    "aboutDropdown": {
+      "overview": "Overview",
+      "ourStory": "Our Story",
+      "impactReport": "Impact Report",
+      "whereWeAre": "Where We Are",
+      "ourTeam": "Our Team"
+    }
+  },
+  "Footer": {
+    "tagline": "Better doesn't go to waste. We rescue end-of-day treats from local businesses at half price.",
+    "discover": "Discover",
+    "about": "About",
+    "businesses": "Businesses",
+    "support": "Support",
+    "surpriseBagWhat": "What Is a Surprise Bag",
+    "sustainability": "Sustainability",
+    "forBusinesses": "For Businesses",
+    "faq": "FAQ",
+    "overview": "Overview",
+    "ourStory": "Our Story",
+    "impactReport": "Impact Report",
+    "whereWeAre": "Where We Are",
+    "ourTeam": "Our Team",
+    "howItWorks": "How It Works",
+    "businessRegistration": "Business Registration",
+    "businessLogin": "Business Login",
+    "contact": "Contact",
+    "press": "Press",
+    "careers": "Careers",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "termsOfService": "Terms of Service",
+    "kvkk": "KVKK Disclosure",
+    "copyright": "© {year} Rescued. All rights reserved.",
+    "instagram": "Instagram",
+    "twitter": "Twitter / X",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn"
+  },
+  "Common": {
+    "comingSoon": "Coming Soon",
+    "download": "Download",
+    "explore": "Explore",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "backToAbout": "← About",
+    "learnMore": "Learn More",
+    "applyNow": "Apply Now"
+  },
+  "AppButtons": {
+    "downloadFrom": "Download",
+    "comingSoon": "Coming Soon"
+  },
+  "WaitlistForm": {
+    "emailPlaceholder": "Your email address",
+    "emailLabel": "Your email address",
+    "submitButton": "Notify Me",
+    "formLabel": "Waitlist form",
+    "successMessage": "Great! You'll be the first to know when the app launches."
+  },
+  "HomePage": {
+    "hero": {
+      "headline1": "Better doesn't",
+      "headline2": "go to waste.",
+      "subtitle": "Rescue end-of-day treats from local businesses at half price. Every Surprise Bag saves a meal — one less step toward waste.",
+      "forBusinesses": "For businesses",
+      "scrollHint": "Explore",
+      "socialProof": "18,500+ users",
+      "socialProofSub": "on the waitlist"
+    },
+    "mission": {
+      "text": "Millions of tonnes of food go to waste in Turkey every year.",
+      "sub": "We're here to change that.",
+      "desc": "Rescued is a food rescue platform that connects local businesses' end-of-day surplus with the community."
+    },
+    "benefits": {
+      "label": "Why Rescued?",
+      "title": "Your wallet and the planet both win",
+      "subtitle": "A Surprise Bag means savings for you, revenue for the business, a breath of fresh air for the planet.",
+      "items": [
+        {
+          "title": "Half price and below",
+          "desc": "Get quality food without breaking the bank. Every Surprise Bag is at least 50% below market value."
+        },
+        {
+          "title": "Right nearby",
+          "desc": "From the bakery, café, or market in your neighbourhood — rescue from businesses within walking distance."
+        },
+        {
+          "title": "For the planet",
+          "desc": "Every bag means prevented CO₂e. See how much carbon you save when your food is rescued."
+        },
+        {
+          "title": "Discover new flavours",
+          "desc": "Discover that patisserie or neighbourhood bakery you've never visited before — all thanks to a Surprise Bag."
+        }
+      ]
+    },
+    "steps": {
+      "label": "How It Works",
+      "title": "Rescue a meal in four steps",
+      "subtitle": "Open the app, find a bag nearby, reserve it — we handle the rest.",
+      "items": [
+        {
+          "title": "Discover",
+          "desc": "See Surprise Bags near you on the map and in list view. Filter by category, distance, and time."
+        },
+        {
+          "title": "Reserve",
+          "desc": "Choose your bag and pay securely in-app. Confirmation arrives instantly — your spot is safe."
+        },
+        {
+          "title": "Collect",
+          "desc": "Head to the business during the stated time window. Swipe the QR code in the app and collect your bag."
+        },
+        {
+          "title": "You rescued it!",
+          "desc": "One more meal diverted from the bin. Your impact accumulates in your profile — CO₂e saved with every rescue."
+        }
+      ]
+    },
+    "impact": {
+      "label": "Impact",
+      "title": "The difference we create together",
+      "subtitle": "Every bag is real impact. Here's that impact, in numbers.",
+      "counter1Label": "Meals Rescued",
+      "counter1Sub": "and growing every day",
+      "counter2Label": "CO₂e Prevented",
+      "counter2Sub": "equivalent CO₂ saved",
+      "counter3Label": "Partner Businesses",
+      "counter3Sub": "across Turkey",
+      "disclaimer": "* Data contains realistic placeholder values."
+    },
+    "sustainability": {
+      "label": "Sustainability",
+      "title": "Waste isn't just food",
+      "subtitle": "Every piece of bread that ends up in the bin means labour, water, energy, and money. We're here to break this cycle.",
+      "ctaButton": "Our Impact Methodology",
+      "stats": [
+        {
+          "value": "8–10%",
+          "desc": "8–10% of global greenhouse gas emissions come from the food system."
+        },
+        {
+          "value": "6M tonnes",
+          "desc": "Approximately 6 million tonnes of food go to waste in Turkey every year — production costs included."
+        },
+        {
+          "value": "1/3",
+          "desc": "A third of all food produced worldwide is discarded without ever being consumed. Every loaf means labour + water + energy."
+        }
+      ]
+    },
+    "business": {
+      "label": "For Businesses",
+      "title": "Got a business?",
+      "titleHighlight": "Turn your end-of-day surplus into revenue.",
+      "desc": "That shelf surplus going to waste every evening could be going into your till. List your Surprise Bag in minutes with Rescued's business panel.",
+      "cta": "Register your business",
+      "mockupLabel": "Business image goes here",
+      "extraIncome": "+€148 extra income",
+      "thisMonth": "This month",
+      "benefits": [
+        "Products destined for the bin turn into daily extra income",
+        "Rescued users convert into new, loyal customers",
+        "Get one step closer to zero-waste with every bag"
+      ]
+    },
+    "testimonials": {
+      "label": "Community",
+      "title": "Hundreds of businesses fight food waste with Rescued",
+      "subtitle": "Voices from users and businesses.",
+      "items": [
+        {
+          "name": "Ayşe T.",
+          "role": "Homemaker, Istanbul",
+          "text": "Every evening at 7 pm I pick up the bakery's Surprise Bag. Fresh bread, börek — and my wallet doesn't take a hit. I wish this had existed years ago!"
+        },
+        {
+          "name": "Mehmet K.",
+          "role": "Pastry Shop Owner, Ankara",
+          "text": "We used to throw away end-of-day leftovers reluctantly. Now everything sells — extra income and a growing customer base."
+        },
+        {
+          "name": "Zeynep A.",
+          "role": "University Student, İzmir",
+          "text": "My budget is tight but I don't want to compromise on food. Thanks to Rescued I can have a great lunch for about 30–40 ₺."
+        }
+      ]
+    },
+    "waitlist": {
+      "title": "Rescued is coming to your pocket",
+      "subtitle": "Be the first to know when the app launches. Get ready to discover Surprise Bags near you.",
+      "spamNote": "No spam. Unsubscribe any time.",
+      "mockupLabel": "App phone mockup"
+    }
+  },
+  "SurprizPaketPage": {
+    "hero": {
+      "title": "What Is a Surprise Bag?",
+      "subtitle": "A rescue bag that brings you local businesses' unsold but perfectly fresh and delicious end-of-day products at a great discount."
+    },
+    "concept": {
+      "label": "The Concept",
+      "title": "Every day, hundreds of meals go to waste",
+      "subtitle": "Bakeries, patisseries, restaurants, and supermarkets are forced to discard surplus products at closing time. Surprise Bags get those products to you — cheaply and for the good of the planet.",
+      "canContainTitle": "What can be in the bag?",
+      "cannotContainTitle": "What cannot be in the bag?",
+      "safetyNote": "All Rescued businesses register by accepting the platform rules. Reports of unsafe products are reviewed within 24 hours.",
+      "canContain": [
+        "Bakery products: bread, simit, poğaça, börek",
+        "Sweets: cake, cookies, cake slices, baklava",
+        "Ready meals: hot service leftovers, portions",
+        "Sandwiches and wraps",
+        "Fruits, vegetables, and grocery items",
+        "Drinks: water, ayran, fruit juice, etc.",
+        "Breakfast items: cheese, olives, jam, etc."
+      ],
+      "cannotContain": [
+        "Products past their expiry date",
+        "Visibly spoiled or mouldy foods",
+        "Alcoholic beverages",
+        "Non-food items"
+      ]
+    },
+    "howTo": {
+      "label": "Your First Bag",
+      "title": "How do you rescue your first Surprise Bag?",
+      "steps": [
+        { "title": "Find a bag near you", "desc": "Open the app and list the Surprise Bags closest to you. Map or list view — your choice." },
+        { "title": "Choose your bag and pay", "desc": "Select the bag from the business you like. Pay securely in-app; confirmation arrives instantly." },
+        { "title": "Go at the stated time", "desc": "Head to the business during the collection window they've set. Usually a 1–2 hour window before closing." },
+        { "title": "Discover the surprise!", "desc": "Pick up the bag, head home, discover what's inside. Every bag is different — that's part of the fun." }
+      ]
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "How much will I pay?",
+      "desc": "Every Surprise Bag is priced at least 50% below the normal market value of its contents. A business's 150 ₺ worth of products is usually offered as a Surprise Bag for 40–70 ₺.",
+      "avgValue": "Average bag value",
+      "avgPrice": "Average bag price",
+      "avgSaving": "Average saving",
+      "avgValueNum": "120–200 ₺",
+      "avgPriceNum": "45–80 ₺",
+      "avgSavingNum": "55–70%",
+      "appNote": "App coming soon — join the waitlist",
+      "waitlistLink": "Waitlist →"
+    }
+  },
+  "SurdurulebilirlikPage": {
+    "hero": {
+      "title": "Sustainability",
+      "subtitle": "Reducing food waste is one of the most powerful tools in the fight against the climate crisis. At Rescued, we measure the environmental impact of every bag transparently."
+    },
+    "impact": {
+      "label": "Impact",
+      "title": "Rescued impact in numbers",
+      "savedMeals": "Meals Rescued",
+      "savedCO2": "CO₂e Prevented",
+      "savedWater": "Water Saved",
+      "savedWaterSub": "used in food production"
+    },
+    "methodology": {
+      "label": "Methodology",
+      "title": "How do we calculate impact?",
+      "subtitle": "In line with our transparency principle, we share our entire impact calculation method openly.",
+      "sources": "Sources:",
+      "sourcesText": "FAO (2011) Global food losses and food waste; WRAP (2021) The food we waste; IPCC AR6 (2022) Food system emissions data. Methodology details and annual reports are published in our transparency documents.",
+      "steps": [
+        {
+          "title": "Rescued product weight is measured",
+          "desc": "The amount of food rescued is calculated using content information entered by the business for each Surprise Bag and average weight values."
+        },
+        {
+          "title": "CO₂e conversion factor is applied",
+          "desc": "The rescued weight is multiplied by food-category CO₂e emission factors sourced from FAO and WRAP."
+        },
+        {
+          "title": "Impact is reported",
+          "desc": "Every user and business can see cumulative impact data in their profile. Annual reports are shared with the public."
+        }
+      ]
+    },
+    "goals": {
+      "label": "Targets",
+      "title": "2026 Sustainability Targets",
+      "items": [
+        { "target": "500,000", "unit": "meals", "label": "meals rescued" },
+        { "target": "1,000+", "unit": "businesses", "label": "active partner businesses" },
+        { "target": "130 tonnes", "unit": "CO₂e", "label": "emissions prevented" },
+        { "target": "10+", "unit": "cities", "label": "nationwide coverage" }
+      ]
+    }
+  },
+  "HakkimizdaPage": {
+    "hero": {
+      "title1": "Against food waste,",
+      "title2": "together.",
+      "subtitle": "Rescued is a social impact venture that invites everyone to join the fight against food waste."
+    },
+    "vision": "We envision a Turkey where food is not wasted.",
+    "impact": {
+      "label": "Impact",
+      "title": "The difference our community makes",
+      "subtitle": "Every meal is a real story. Here's the numerical summary of that story.",
+      "counter1": "Meals Rescued",
+      "counter1sub": "and growing every day",
+      "counter2": "Registered Users",
+      "counter2sub": "active community members",
+      "counter3": "Partner Businesses",
+      "counter3sub": "across Turkey",
+      "disclaimer": "* Data contains realistic placeholder values."
+    },
+    "story": {
+      "label": "Our Story",
+      "title1": "It all started with",
+      "title2": "an ordinary evening.",
+      "p1": "The neighbourhood bakery was about to close; the display was full — but some of what was left would go to waste. That image asked us a question:",
+      "quote": "Why does it have to be this way?",
+      "p2": "Millions of tonnes of food go to waste in Turkey every year. The solution didn't require changing the whole chain — it just meant focusing on the final few hours.",
+      "readMore": "Read more",
+      "timeline": [
+        { "year": "2023", "title": "The idea was born", "desc": "Early research and problem discovery in Istanbul." },
+        { "year": "2024", "title": "First partners", "desc": "Started with 12 pilot businesses in Beşiktaş and Kadıköy." },
+        { "year": "2025", "title": "Growth", "desc": "3 cities, 340+ businesses, 47,000+ meals rescued." }
+      ],
+      "allTimeline": "Full timeline"
+    },
+    "model": {
+      "label": "Business Model",
+      "title": "Win · Win · Win",
+      "subtitle": "At Rescued, no party makes a sacrifice. Every bag generates a clear win for all three sides.",
+      "items": [
+        {
+          "who": "Businesses",
+          "title": "Surplus becomes revenue",
+          "desc": "End-of-day products destined for the bin become an additional income stream and new customer acquisition."
+        },
+        {
+          "who": "Users",
+          "title": "Good food at a fair price",
+          "desc": "They access quality, fresh food at half price while discovering hidden gems in their neighbourhood."
+        },
+        {
+          "who": "The Planet",
+          "title": "A breath with every bag",
+          "desc": "Every bag rescued means prevented CO₂e emissions and protected natural resources."
+        }
+      ],
+      "climateTitle": "Food waste and the climate crisis",
+      "climateDesc": "Reducing food waste is one of the most impactful actions individuals can take in the fight against the climate crisis. A third of all food produced worldwide is discarded without ever being consumed, and this process accounts for roughly 8–10% of global greenhouse gas emissions. Every Surprise Bag breaks this cycle.",
+      "climateSource": "Source: FAO (2011), IPCC AR6 (2022) — for methodology details, see our",
+      "climateLink": "Sustainability page",
+      "climateSuffix": "."
+    },
+    "subpages": {
+      "impactReport": {
+        "title": "Our Impact Report",
+        "desc": "Meals rescued, CO₂e prevented, water/energy equivalents — impact in numbers."
+      },
+      "whereWeAre": {
+        "title": "Where Are We?",
+        "desc": "Which cities we're active in now and where we're expanding next."
+      },
+      "esgTitle": "Sustainability is how we work",
+      "esgDesc": "Environmental impact measurement, social inclusivity, and transparent governance are in Rescued's DNA. Our annual impact reports share our methodology and targets with the public.",
+      "esgLabel": "ESG Approach",
+      "esgLink1": "Sustainability",
+      "esgLink2": "Impact Report",
+      "explore": "Explore"
+    },
+    "team": {
+      "label": "Our Team",
+      "title": "Who does this work?",
+      "subtitle": "We came together to fight food waste.",
+      "viewAll": "See the Full Team & Advisory Board"
+    },
+    "cta": {
+      "title": "Every meal matters.",
+      "subtitle": "Download the app, discover Surprise Bags near you — or register your business to join the Rescued family.",
+      "businessLink": "Register your business"
+    }
+  },
+  "HikayemizPage": {
+    "hero": {
+      "title": "Our Story",
+      "subtitle": "A journey from an ordinary evening observation to 47,000+ meals rescued."
+    },
+    "opening": {
+      "quote": "Why does it have to be this way?",
+      "text": "On a cold February evening in 2023, a bakery window in Istanbul posed this question. Shelves going from full to empty, flavours destined for the bin. Rescued was born from this question."
+    },
+    "timeline": {
+      "label": "Milestones",
+      "title": "From idea to today, step by step",
+      "subtitle": "The real journey from a small observation to a scalable platform.",
+      "events": [
+        {
+          "year": "February 2023",
+          "title": "Problem identified",
+          "badge": "Beginning",
+          "description": "Watching a bakery window in Beşiktaş, Istanbul being emptied at closing time changed everything. Research began: annual food waste in Turkey, which sectors, which solutions."
+        },
+        {
+          "year": "May 2023",
+          "title": "First prototype",
+          "description": "Manual test in a single neighbourhood with 5 businesses: WhatsApp group, daily bag notification, user feedback. Concept validated — people wanted it and they came."
+        },
+        {
+          "year": "September 2023",
+          "title": "Team founded",
+          "badge": "Team",
+          "description": "Four co-founders came together. A core team with expertise in technology, business development, product design, and sustainability. The first investment round started."
+        },
+        {
+          "year": "January 2024",
+          "title": "First app version",
+          "description": "Beta app launched in Beşiktaş and Kadıköy with 12 partner businesses. 340 bags rescued in the first week. User satisfaction score: 4.7/5."
+        },
+        {
+          "year": "June 2024",
+          "title": "Launched in Ankara & İzmir",
+          "badge": "Growth",
+          "description": "Following Istanbul's success, Ankara and İzmir operations went live. 80 new partner businesses completed the onboarding process. Reached 120+ active businesses in total."
+        },
+        {
+          "year": "December 2024",
+          "title": "10,000th meal rescued",
+          "description": "A major milestone: the 10,000th meal rescued. The community kept growing. The impact report was published; CO₂e methodology independently verified."
+        },
+        {
+          "year": "2025",
+          "title": "Scaling and new features",
+          "badge": "Today",
+          "description": "340+ businesses, 18,500+ users, 47,000+ meals rescued. Expansion plans to new cities in progress. Corporate ESG packages and B2B solutions in development."
+        }
+      ]
+    },
+    "missionBand": {
+      "headline": "This story isn't over yet.",
+      "text": "Every new city, every new business, every bag rescued is the next page of this story. You're part of this story too.",
+      "cta1": "Join the Waitlist",
+      "cta2": "Register Your Business"
+    },
+    "related": {
+      "next": "Next",
+      "impactReport": "Our Impact Report",
+      "explore": "Explore",
+      "ourTeam": "Our Team"
+    }
+  },
+  "EtkiRaporuPage": {
+    "hero": {
+      "title": "Impact Report",
+      "subtitle": "The real difference our community makes. Measurable, transparent, verifiable."
+    },
+    "highlights": {
+      "label": "2024 Summary",
+      "title": "Headline numbers",
+      "items": [
+        {
+          "value": "47,820",
+          "unit": "meals",
+          "label": "Meals Rescued",
+          "desc": "Roughly 1,600 times the monthly nutritional needs of individuals living below the poverty line in Turkey."
+        },
+        {
+          "value": "12,400",
+          "unit": "kg CO₂e",
+          "label": "Emissions Prevented",
+          "desc": "Equivalent to offsetting approximately 850 flight hours' worth of carbon."
+        },
+        {
+          "value": "6,800",
+          "unit": "litres",
+          "label": "Water Protected",
+          "desc": "The amount of water used to produce the rescued food — returned to nature."
+        },
+        {
+          "value": "4,200",
+          "unit": "kWh",
+          "label": "Energy Saved",
+          "desc": "The amount of energy that would have been required to produce the uneaten food."
+        }
+      ]
+    },
+    "charts": {
+      "label": "Visual Analysis",
+      "title": "Impact data, visually",
+      "subtitle": "Monthly growth, city-by-city breakdown, and sector split.",
+      "placeholder": "Chart goes here",
+      "items": [
+        { "title": "Monthly Meals Rescued", "type": "Line Chart" },
+        { "title": "City-by-City Breakdown", "type": "Pie Chart" },
+        { "title": "Sector Split", "type": "Bar Chart" }
+      ]
+    },
+    "sdg": {
+      "label": "UN SDGs",
+      "title": "Sustainable Development Goals",
+      "subtitle": "Rescued's activities directly align with the following United Nations SDGs.",
+      "goals": [
+        { "number": "2", "title": "Zero Hunger" },
+        { "number": "12", "title": "Responsible Consumption" },
+        { "number": "13", "title": "Climate Action" },
+        { "number": "17", "title": "Strong Partnerships" }
+      ]
+    },
+    "reports": {
+      "label": "Archive",
+      "title": "Download annual reports",
+      "pdfButton": "PDF",
+      "disclaimer": "* PDF reports will be published after launch.",
+      "items": [
+        {
+          "year": "2024",
+          "title": "Rescued Impact Report 2024",
+          "desc": "First full-year impact assessment. Methodology, city breakdown, sector analysis.",
+          "badge": "New"
+        },
+        {
+          "year": "2023",
+          "title": "Rescued Impact Report 2023",
+          "desc": "Founding year pilot data. Methodology foundations and initial learnings.",
+          "badge": ""
+        }
+      ]
+    },
+    "cta": {
+      "title": "Explore our methodology",
+      "desc": "Learn more about our CO₂e calculation method, data sources, and verification process.",
+      "button": "Sustainability Page"
+    }
+  },
+  "NerelerdeyizPage": {
+    "hero": {
+      "title": "Where Are We?",
+      "subtitle": "We're currently active in Istanbul, Ankara, and İzmir. We'll keep growing until we reach every corner of Turkey."
+    },
+    "map": {
+      "label": "Map",
+      "title": "Rescued in Turkey",
+      "subtitle": "Olive green dots show active cities."
+    },
+    "activeCities": {
+      "label": "Active Cities",
+      "title": "Where are we now?",
+      "active": "Active",
+      "since": "since",
+      "businessCount": "businesses",
+      "districts": "Districts"
+    },
+    "comingSoon": {
+      "label": "Growth Plan",
+      "title": "Coming to these cities soon",
+      "subtitle": "We keep growing to reach every corner of Turkey."
+    },
+    "notify": {
+      "title": "My city isn't there — let me know!",
+      "desc": "If Rescued isn't in your city yet, leave your email. We'll be the first to let you know when we arrive — and you'll be the first to rescue a meal."
+    },
+    "businessCta": {
+      "title": "Register your business in your city",
+      "desc": "If you're in an active city or one coming soon, register your business now — be ready in the system from day one of the launch.",
+      "button": "Register Your Business"
+    }
+  },
+  "EkipPage": {
+    "hero": {
+      "title": "Our Team",
+      "subtitle": "The people who came together to fight food waste."
+    },
+    "founders": {
+      "label": "Founding Team",
+      "title": "The founders of Rescued"
+    },
+    "teamSection": {
+      "label": "Team",
+      "title": "Building together",
+      "subtitle": "Each an expert in their field, committed to the same mission."
+    },
+    "advisors": {
+      "label": "Advisory Board",
+      "title": "Those who guide us"
+    },
+    "careerCta": {
+      "title": "Join this team",
+      "desc": "If you want to be part of the fight against food waste, check out our open positions.",
+      "button": "Careers Page"
+    }
+  },
+  "IsletmelerPage": {
+    "hero": {
+      "title1": "Your surplus doesn't belong",
+      "title2": "in the bin — it belongs in your till.",
+      "subtitle": "That shelf surplus going to waste every evening could become extra income. Listing a Surprise Bag on Rescued takes 5 minutes.",
+      "cta1": "Register Your Business",
+      "cta2": "How Does It Work?"
+    },
+    "problem": {
+      "label": "The Real Cost",
+      "title": "It's not just food that goes to waste",
+      "subtitle": "Every discarded product means both a production cost and a disposal cost. Businesses typically lose twice.",
+      "stats": [
+        { "value": "~30%", "label": "Average food waste rate of produced goods" },
+        { "value": "2×", "label": "Loss: production cost + disposal cost" },
+        { "value": "Zero", "label": "On Rescued: products for the bin → sold revenue" }
+      ]
+    },
+    "howItWorks": {
+      "label": "The Process",
+      "title": "How does the Surprise Bag model work?",
+      "subtitle": "Your end-of-day surplus becomes revenue in four steps.",
+      "steps": [
+        { "title": "Pack your surplus", "desc": "Put end-of-day leftover products into a 'Surprise Bag'. You decide what goes in." },
+        { "title": "You set the collection time", "desc": "Set the daily quantity and collection window yourself. Update in seconds via the panel." },
+        { "title": "Reach nearby customers", "desc": "Rescued users discover you, make a reservation, and come to your door at the time you set." },
+        { "title": "Cut your waste and costs", "desc": "Products destined for the bin turn into revenue, disposal costs fall, and you gain new customers." }
+      ]
+    },
+    "income": {
+      "exampleLabel": "Example Scenario",
+      "title": "Products for the bin become daily extra income",
+      "desc": "A pastry shop that prepares 5 Surprise Bags before closing each day could earn roughly 700–900 ₺ extra per week — a source created entirely from nothing.",
+      "benefits": [
+        "Your disposal costs fall",
+        "Zero new customer acquisition cost",
+        "Track everything in real time from the panel"
+      ],
+      "calcTitle": "Estimated Monthly Revenue",
+      "rows": [
+        { "label": "Daily bag count", "value": "5 bags" },
+        { "label": "Average price per bag", "value": "65 ₺" },
+        { "label": "Monthly gross revenue", "value": "~9,750 ₺" },
+        { "label": "Platform commission (~15%)", "value": "~1,463 ₺" },
+        { "label": "Net earnings", "value": "~8,287 ₺" }
+      ],
+      "calcDisclaimer": "* Estimated example values. Actual earnings vary by business type and location."
+    },
+    "growth": {
+      "label": "Growth",
+      "title": "A Surprise Bag is an invitation to connect",
+      "subtitle": "A significant portion of users who come to collect a bag make additional purchases or become regular customers. Rescued is a window opening onto a new audience.",
+      "disclaimer": "* Placeholder values. Live data will be updated after launch.",
+      "stats": [
+        { "stat": "68%", "desc": "Users revisiting the business due to high satisfaction" },
+        { "stat": "3.2×", "desc": "Average business discoveries by a Surprise Bag user" },
+        { "stat": "4.8★", "desc": "Rescued business panel user rating" }
+      ]
+    },
+    "businessTypes": {
+      "label": "Sectors",
+      "title": "A solution for every type of business",
+      "subtitle": "From bakeries to supermarkets, cafés to wholesalers — any food-selling business can join Rescued.",
+      "popular": "Most Popular",
+      "items": [
+        { "title": "Restaurant", "desc": "Make the most of daily menu leftovers and portion surpluses. Bring kitchen waste close to zero." },
+        { "title": "Café & Patisserie", "desc": "Turn end-of-day cakes, cookies, sandwiches, and drinks into a Surprise Bag. Fresh products, fresh revenue." },
+        { "title": "Supermarket & Grocery", "desc": "Find owners for products nearing their best-before date and fresh fruit and vegetables at a discount." },
+        { "title": "Buffet & Open Buffet", "desc": "Pack end-of-day ready meals and snacks, meet new customers." },
+        { "title": "Wholesaler & Producer", "desc": "Connect small batches and cosmetically imperfect products with the community through the Rescued channel." }
+      ]
+    },
+    "panel": {
+      "label": "Business Panel",
+      "title": "Everything at your fingertips",
+      "desc": "Real-time sales tracking, meals-rescued counter, CO₂e prevented, and detailed reports — all in one panel.",
+      "mockupLabel": "Business panel screenshot goes here",
+      "features": [
+        "List, edit, close a bag — in seconds",
+        "Daily, weekly, monthly revenue reports",
+        "Meals rescued and CO₂e counter",
+        "Customer reviews and ratings"
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "You don't have to register without asking your questions first",
+      "items": [
+        {
+          "question": "What should I put in a Surprise Bag?",
+          "answer": "You can put in any type of food that is fresh and consumable at the end of the day. Bread, sweets, sandwiches, hot food, grocery items... The only rule: it must be safe and consumable. You don't have to specify the contents — being a 'surprise' is part of the product."
+        },
+        {
+          "question": "How does the commission work?",
+          "answer": "Rescued charges a small platform commission on the sale price of each bag sold. This commission rate varies by category and is displayed clearly in your business panel after registration. The net profit on products that would otherwise be thrown away is still much higher."
+        },
+        {
+          "question": "How many bags can I sell per day?",
+          "answer": "As many as you like. You set the daily quantity limit yourself — you can start with 1 bag and scale to hundreds. Update in real time from your business panel."
+        },
+        {
+          "question": "Who is responsible for food safety?",
+          "answer": "It is the business's responsibility to ensure products comply with food safety standards. Your existing food business licence remains valid. Rescued requires that only safe, consumable products are listed — this is a platform rule."
+        },
+        {
+          "question": "When are payments made?",
+          "answer": "Payments are transferred to your account weekly. You can track real-time sales and revenue in the business panel."
+        },
+        {
+          "question": "How long does registration take?",
+          "answer": "The online registration form takes about 5 minutes. Our team reviews your application within 24–48 hours, and after approval your business panel becomes active. You can list your first bag the same day."
+        },
+        {
+          "question": "Do I set the price?",
+          "answer": "Yes, but there is a minimum discount rule: a Surprise Bag must be priced at least 50% below the normal market value of its contents. This rule protects Rescued's promise to users. Most businesses launch with a 60–70% discount and sell out quickly."
+        },
+        {
+          "question": "Is the panel hard to use?",
+          "answer": "The panel is kept extremely simple. Create a bag, enter a quantity, set a time window — that's it. Mobile and tablet-friendly, no technical knowledge required. Our support team is always ready to help with the initial setup."
+        }
+      ]
+    },
+    "register": {
+      "label": "Let's Get Started",
+      "title": "Register your business with Rescued",
+      "subtitle": "Fill in the form and our team will call you within 24 hours."
+    }
+  },
+  "SSSPage": {
+    "hero": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "If you can't find the answer here, write to us."
+    },
+    "userFaqsLabel": "For Users",
+    "userFaqsTitle": "About the App and Surprise Bags",
+    "notFoundText": "Didn't find an answer?",
+    "notFoundCta": "Write to Us",
+    "businessOwner": "Are you a business owner?",
+    "businessFaqLink": "Business-specific FAQ →",
+    "faqs": [
+      {
+        "question": "What is a Surprise Bag?",
+        "answer": "A Surprise Bag is a rescue bag that brings you local businesses' unsold but perfectly fresh and consumable end-of-day products at a great discount. The contents change every day — that's part of the fun."
+      },
+      {
+        "question": "Where can I pick up a bag?",
+        "answer": "Once you download the app and grant location permission, you can see all active Surprise Bag businesses near you on the map. Just reserve the bag you want and head to the business at the stated time."
+      },
+      {
+        "question": "Will I know in advance what's in the bag?",
+        "answer": "The general category (bakery products, sweets, ready meals, etc.) and possible contents are listed. But the exact contents change every day — that's the flavour of the surprise and the discovery."
+      },
+      {
+        "question": "Are there allergens?",
+        "answer": "Businesses are required to state key allergen information (gluten, dairy, eggs, nuts, etc.) in their profile. If you have a serious allergy, you can contact the business directly before making a reservation."
+      },
+      {
+        "question": "Is payment secure?",
+        "answer": "Yes. All payments are processed securely through the Rescued infrastructure. Your card details are not shared with the business."
+      },
+      {
+        "question": "Can I cancel a bag?",
+        "answer": "If you cancel at least 2 hours before the collection time, you receive a full refund. The refund policy for later cancellations is detailed in the app."
+      },
+      {
+        "question": "What if the business is closed?",
+        "answer": "In that case a full refund is made and our support team will notify you. Businesses with recurring reliability issues are removed from the platform."
+      },
+      {
+        "question": "How many bags can I get?",
+        "answer": "Currently each user can get 1 bag per day from a business. This rule ensures the opportunity is shared fairly with the community."
+      }
+    ]
+  },
+  "IletisimPage": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Got a problem or an idea? Every message is read."
+    },
+    "form": {
+      "label": "Get in Touch",
+      "title": "Send your message"
+    },
+    "info": {
+      "label": "Details",
+      "title": "Contact Information",
+      "email": "Email",
+      "emailValue": "hello@rescued.com",
+      "address": "Address",
+      "addressValue": "Istanbul, Turkey",
+      "responseTime": "Response time",
+      "responseTimeValue": "Usually within 24 hours",
+      "businessNote": "There's a separate form for business registration —",
+      "businessLink": "apply here"
+    }
+  },
+  "BasinPage": {
+    "hero": {
+      "title": "Press",
+      "subtitle": "You're in the right place for press kits, logo files, and media enquiries."
+    },
+    "kit": {
+      "label": "Press Kit",
+      "title": "Media resources",
+      "downloadLabel": "download",
+      "items": [
+        { "title": "Logo Pack", "desc": "SVG, PNG — white, colour, dark background versions" },
+        { "title": "Brand Guide", "desc": "Colours, typography, usage rules" },
+        { "title": "Press Release", "desc": "Company profile and launch announcement" },
+        { "title": "Photo Gallery", "desc": "High-resolution product images" }
+      ]
+    },
+    "contact": {
+      "title": "For media enquiries",
+      "desc": "Get in touch for interview requests, quotes, or press questions.",
+      "email": "press@rescued.com"
+    }
+  },
+  "KariyerPage": {
+    "hero": {
+      "title": "Careers",
+      "subtitle": "Would you like to be part of a team fighting food waste and creating real impact?"
+    },
+    "positions": {
+      "label": "Open Positions",
+      "title": "Join our team",
+      "fullTime": "Full Time",
+      "items": [
+        { "title": "Senior Mobile Developer (React Native)", "location": "Istanbul / Remote" },
+        { "title": "Growth & Community Manager", "location": "Istanbul" },
+        { "title": "Business Development Specialist", "location": "Istanbul / Ankara / İzmir" },
+        { "title": "UX Designer", "location": "Remote" }
+      ]
+    },
+    "spontaneous": {
+      "title": "Don't see the position you're looking for?",
+      "desc": "We're open to spontaneous applications. Send your CV and a short cover letter.",
+      "cta": "Spontaneous Application"
+    }
+  }
+}

@@ -1,0 +1,841 @@
+{
+  "Navbar": {
+    "howItWorks": "Nasıl Çalışır",
+    "surpriseBag": "Sürpriz Paket Nedir",
+    "sustainability": "Sürdürülebilirlik",
+    "forBusinesses": "İşletmeler",
+    "about": "Hakkımızda",
+    "downloadApp": "Uygulamayı İndir",
+    "comingSoon": "Yakında",
+    "aboutDropdown": {
+      "overview": "Genel Bakış",
+      "ourStory": "Hikâyemiz",
+      "impactReport": "Etki Raporu",
+      "whereWeAre": "Nerelerdeyiz",
+      "ourTeam": "Ekibimiz"
+    }
+  },
+  "Footer": {
+    "tagline": "Daha iyisi çöpe gitmesin. Çevrendeki işletmelerin gün sonu lezzetlerini yarı fiyatına kurtarıyoruz.",
+    "discover": "Keşfet",
+    "about": "Hakkımızda",
+    "businesses": "İşletmeler",
+    "support": "Destek",
+    "surpriseBagWhat": "Sürpriz Paket Nedir",
+    "sustainability": "Sürdürülebilirlik",
+    "forBusinesses": "İşletmeler",
+    "faq": "SSS",
+    "overview": "Genel Bakış",
+    "ourStory": "Hikâyemiz",
+    "impactReport": "Etki Raporu",
+    "whereWeAre": "Nerelerdeyiz",
+    "ourTeam": "Ekibimiz",
+    "howItWorks": "Nasıl Çalışır",
+    "businessRegistration": "İşletme Kaydı",
+    "businessLogin": "İşletme Girişi",
+    "contact": "İletişim",
+    "press": "Basın",
+    "careers": "Kariyer",
+    "privacyPolicy": "Gizlilik Politikası",
+    "cookiePolicy": "Çerez Politikası",
+    "termsOfService": "Kullanım Koşulları",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "copyright": "© {year} Rescued. Tüm hakları saklıdır.",
+    "instagram": "Instagram",
+    "twitter": "Twitter / X",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn"
+  },
+  "Common": {
+    "comingSoon": "Yakında",
+    "download": "İndir",
+    "explore": "Keşfet",
+    "readMore": "Devamını oku",
+    "viewAll": "Tümünü Gör",
+    "backToAbout": "← Hakkımızda",
+    "learnMore": "Daha Fazla Bilgi",
+    "applyNow": "Hemen Başvur"
+  },
+  "AppButtons": {
+    "downloadFrom": "İndir",
+    "comingSoon": "Yakında"
+  },
+  "WaitlistForm": {
+    "emailPlaceholder": "E-posta adresin",
+    "emailLabel": "E-posta adresin",
+    "submitButton": "Haberdar Et",
+    "formLabel": "Bekleme listesi formu",
+    "successMessage": "Harika! Uygulama çıktığında seni ilk haberdar edeceğiz."
+  },
+  "HomePage": {
+    "hero": {
+      "headline1": "Daha iyisi",
+      "headline2": "çöpe gitmesin.",
+      "subtitle": "Çevrendeki işletmelerin gün sonu lezzetlerini yarı fiyatına kurtar. Her Sürpriz Paket bir öğün kurtarır, bir adım daha az israf demektir.",
+      "forBusinesses": "İşletmeler için",
+      "scrollHint": "Keşfet",
+      "socialProof": "18.500+ kullanıcı",
+      "socialProofSub": "bekleme listesinde"
+    },
+    "mission": {
+      "text": "Türkiye'de her yıl milyonlarca ton gıda çöpe gidiyor.",
+      "sub": "Biz bunu değiştirmek için varız.",
+      "desc": "Rescued, yerel işletmelerin gün sonu fazlasını toplulukla buluşturan bir gıda kurtarma platformudur."
+    },
+    "benefits": {
+      "label": "Neden Rescued?",
+      "title": "Hem cüzdanın hem gezegen kazanır",
+      "subtitle": "Sürpriz Paket; sana indirim, işletmeye gelir, gezegene bir nefes.",
+      "items": [
+        {
+          "title": "Yarı fiyat ve altı",
+          "desc": "Kaliteli yemeği bütçeni sarsmadan al. Her Sürpriz Paket piyasa değerinin en az %50 altında."
+        },
+        {
+          "title": "Hemen yakınında",
+          "desc": "Mahallendeki fırından, kafeden, marketten — yürüme mesafesindeki işletmelerden kurtar."
+        },
+        {
+          "title": "Gezegen için",
+          "desc": "Her paket, önlenen CO₂e demek. Yemeğin kurtarıldığında ne kadar karbon tasarrufu ettiğini görürsün."
+        },
+        {
+          "title": "Yeni lezzetler keşfet",
+          "desc": "Daha önce hiç girmediğin o pastaneyi, o mahalle fırınını Sürpriz Paket sayesinde keşfet."
+        }
+      ]
+    },
+    "steps": {
+      "label": "Nasıl Çalışır",
+      "title": "Dört adımda bir öğün kurtar",
+      "subtitle": "Uygulamayı aç, yakınındaki paketi bul, rezerve et — gerisini hallederiz.",
+      "items": [
+        {
+          "title": "Keşfet",
+          "desc": "Yakınındaki Sürpriz Paketleri haritada ve listede gör. Kategori, mesafe ve saate göre filtrele."
+        },
+        {
+          "title": "Rezerve et",
+          "desc": "Paketini seç, uygulamadan güvenle öde. Onay anında gelir, yetin güvende."
+        },
+        {
+          "title": "Teslim al",
+          "desc": "Belirtilen saat aralığında işletmeye git. Uygulamadaki QR'ı kaydır, paketi al."
+        },
+        {
+          "title": "Kurtardın!",
+          "desc": "Bir öğün daha çöpten döndü. Etkin profilinde birikiyor, her kurtarmada CO₂e tasarrufu görüyorsun."
+        }
+      ]
+    },
+    "impact": {
+      "label": "Etki",
+      "title": "Birlikte yarattığımız fark",
+      "subtitle": "Her paket, gerçek bir etki. İşte o etki, sayılarla.",
+      "counter1Label": "Kurtarılan Öğün",
+      "counter1Sub": "ve her gün artıyor",
+      "counter2Label": "Önlenen CO₂e",
+      "counter2Sub": "eşdeğer CO₂ tasarrufu",
+      "counter3Label": "Partner İşletme",
+      "counter3Sub": "Türkiye genelinde",
+      "disclaimer": "* Veriler gerçekçi placeholder değerler içermektedir."
+    },
+    "sustainability": {
+      "label": "Sürdürülebilirlik",
+      "title": "İsraf sadece yemek değil",
+      "subtitle": "Her çöpe giden ekmek; emek, su, enerji ve para demek. Biz bu döngüyü kırmak için varız.",
+      "ctaButton": "Etki Metodolojimiz",
+      "stats": [
+        {
+          "value": "8–10%",
+          "desc": "Küresel sera gazı emisyonlarının yüzde 8–10'u gıda sisteminden kaynaklanıyor."
+        },
+        {
+          "value": "6M ton",
+          "desc": "Türkiye'de her yıl yaklaşık 6 milyon ton gıda çöpe gidiyor — üretim maliyetiyle birlikte."
+        },
+        {
+          "value": "1/3",
+          "desc": "Dünyada üretilen gıdanın üçte biri hiç tüketilmeden atılıyor. Her ekmek, emek + su + enerji demek."
+        }
+      ]
+    },
+    "business": {
+      "label": "İşletmeler için",
+      "title": "İşletmeniz mi var?",
+      "titleHighlight": "Gün sonu fazlanızı gelire çevirin.",
+      "desc": "Her akşam çöpe giden o raf fazlası artık kasana girebilir. Rescued'ın işletme paneli ile Sürpriz Paketinizi dakikalar içinde yayına alın.",
+      "cta": "İşletmeni kaydet",
+      "mockupLabel": "İşletme görseli buraya gelecek",
+      "extraIncome": "+2.840 ₺ ek gelir",
+      "thisMonth": "Bu ay",
+      "benefits": [
+        "Atılacak ürün, günlük ek gelire dönüşür",
+        "Rescued kullanıcıları yeni ve sadık müşterilere dönüşür",
+        "Sıfır israf hedefine her paketle bir adım yaklaş"
+      ]
+    },
+    "testimonials": {
+      "label": "Topluluk",
+      "title": "Yüzlerce işletme Rescued ile israfla mücadele ediyor",
+      "subtitle": "Kullanıcılardan ve işletmelerden gelen ses.",
+      "items": [
+        {
+          "name": "Ayşe T.",
+          "role": "Ev Hanımı, İstanbul",
+          "text": "Her akşam 19:00'da fırının Sürpriz Paketini alıyorum. Hem taze ekmek hem börek, hem de cebim yanmıyor. Keşke yıllar önce olsaydı!"
+        },
+        {
+          "name": "Mehmet K.",
+          "role": "Pastane Sahibi, Ankara",
+          "text": "Eskiden gün sonu kalanları üzülerek çöpe atıyorduk. Şimdi her şey satılıyor, hem ek gelir var hem de müşteri tabanımız genişledi."
+        },
+        {
+          "name": "Zeynep A.",
+          "role": "Üniversite Öğrencisi, İzmir",
+          "text": "Bütçem kısıtlı ama yemekten ödün vermek istemiyorum. Rescued sayesinde günde 5-6 TL'ye harika bir öğle yemeği yiyebiliyorum."
+        }
+      ]
+    },
+    "waitlist": {
+      "title": "Rescued yakında cebinde",
+      "subtitle": "Uygulama çıktığında ilk sen haberdar ol. Yakınındaki Sürpriz Paketleri keşfetmeye hazır ol.",
+      "spamNote": "Spam yok. İstediğin zaman listeden çıkabilirsin.",
+      "mockupLabel": "Uygulama telefon mockup"
+    }
+  },
+  "SurprizPaketPage": {
+    "hero": {
+      "title": "Sürpriz Paket Nedir?",
+      "subtitle": "Yerel işletmelerin gün sonu satılamayan ama tamamen taze ve lezzetli ürünlerini büyük indirimle sana sunan bir kurtarma paketi."
+    },
+    "concept": {
+      "label": "Konsept",
+      "title": "Her gün yüzlerce yemek çöpe gidiyor",
+      "subtitle": "Fırınlar, pastaneler, restoranlar ve marketler kapanışta artakalan ürünleri atmak zorunda kalıyor. Sürpriz Paket, bu ürünleri sana ulaştırır — hem ucuza hem de gezegenin iyiliğine.",
+      "canContainTitle": "Pakette neler olabilir?",
+      "cannotContainTitle": "Pakette neler olamaz?",
+      "safetyNote": "Tüm Rescued işletmeleri platform kurallarını kabul ederek kayıt olur. Güvenli olmayan ürün bildirimleri 24 saat içinde incelenir.",
+      "canContain": [
+        "Fırın ürünleri: ekmek, simit, poğaça, börek",
+        "Tatlılar: kek, kurabiye, pasta dilimleri, baklava",
+        "Hazır yemekler: sıcak servis artıkları, porsiyonlar",
+        "Sandviç ve wrap çeşitleri",
+        "Meyve, sebze ve market ürünleri",
+        "İçecekler: suyu, ayranı, meyve suyu vb.",
+        "Kahvaltılık ürünler: peynir, zeytin, reçel vb."
+      ],
+      "cannotContain": [
+        "Son kullanma tarihi geçmiş ürünler",
+        "Görünür şekilde bozulmuş veya küflenmiş gıdalar",
+        "Alkollü içecekler",
+        "Gıda dışı ürünler"
+      ]
+    },
+    "howTo": {
+      "label": "İlk Paketin",
+      "title": "İlk Sürpriz Paketini nasıl kurtarırsın?",
+      "steps": [
+        { "title": "Yakınındaki paketi bul", "desc": "Uygulamayı aç, konumuna en yakın Sürpriz Paketleri listele. Harita veya liste görünümü, tercihine göre." },
+        { "title": "Paketini seç ve öde", "desc": "Beğendiğin işletmenin paketini seç. Uygulama içinden güvenle öde, onayın anında gelir." },
+        { "title": "Belirtilen saatte git", "desc": "İşletmenin belirlediği teslim saat aralığında işletmeye git. Genellikle kapanış öncesi 1-2 saatlik pencere." },
+        { "title": "Sürprizi keşfet!", "desc": "Paketi al, eve git, içindekileri keşfet. Her paket farklı — bu da eğlencenin bir parçası." }
+      ]
+    },
+    "pricing": {
+      "label": "Fiyatlandırma",
+      "title": "Ne kadar ödeyeceğim?",
+      "desc": "Her Sürpriz Paket, içeriğin normal piyasa değerinin en az %50 altında fiyatlanır. Bir işletmenin 150 ₺'lik ürünleri genellikle 40-70 ₺'ye Sürpriz Paket olarak sunulur.",
+      "avgValue": "Ortalama paket değeri",
+      "avgPrice": "Ortalama paket fiyatı",
+      "avgSaving": "Ortalama tasarruf",
+      "avgValueNum": "120-200 ₺",
+      "avgPriceNum": "45-80 ₺",
+      "avgSavingNum": "%55-70",
+      "appNote": "Uygulama yakında — bekleme listesine katıl",
+      "waitlistLink": "Bekleme Listesi →"
+    }
+  },
+  "SurdurulebilirlikPage": {
+    "hero": {
+      "title": "Sürdürülebilirlik",
+      "subtitle": "Gıda israfını azaltmak, iklim kriziyle mücadelenin en güçlü araçlarından biridir. Rescued'da her paketin çevresel etkisini şeffaf bir şekilde ölçüyoruz."
+    },
+    "impact": {
+      "label": "Etki",
+      "title": "Sayılarla Rescued etkisi",
+      "savedMeals": "Kurtarılan Öğün",
+      "savedCO2": "Önlenen CO₂e",
+      "savedWater": "Tasarruf Edilen Su",
+      "savedWaterSub": "gıda üretiminde kullanılan"
+    },
+    "methodology": {
+      "label": "Metodoloji",
+      "title": "Etkiyi nasıl hesaplıyoruz?",
+      "subtitle": "Şeffaflık ilkemiz gereği, tüm etki hesaplama yöntemimizi açık paylaşıyoruz.",
+      "sources": "Kaynaklar:",
+      "sourcesText": "FAO (2011) Global food losses and food waste; WRAP (2021) The food we waste; IPCC AR6 (2022) Food system emissions data. Metodoloji detayları ve yıllık raporlar şeffaflık belgelerimizde yayınlanmaktadır.",
+      "steps": [
+        {
+          "title": "Kurtarılan ürün ağırlığı ölçülür",
+          "desc": "Her Sürpriz Paket için işletme tarafından girilen içerik bilgileri ve ortalama ağırlık değerleri kullanılarak kurtarılan gıda miktarı hesaplanır."
+        },
+        {
+          "title": "CO₂e çevrim faktörü uygulanır",
+          "desc": "FAO ve WRAP kaynaklı gıda kategorisi bazlı CO₂e emisyon faktörleri ile kurtarılan ağırlık çarpılır."
+        },
+        {
+          "title": "Etki raporlanır",
+          "desc": "Her kullanıcı ve işletme, kendi profilinde kümülatif etki verilerini görebilir. Yıllık raporlar kamuoyuyla paylaşılır."
+        }
+      ]
+    },
+    "goals": {
+      "label": "Hedefler",
+      "title": "2026 Sürdürülebilirlik Hedefleri",
+      "items": [
+        { "target": "500.000", "unit": "öğün", "label": "kurtarılmış öğün" },
+        { "target": "1.000+", "unit": "işletme", "label": "aktif partner işletme" },
+        { "target": "130 ton", "unit": "CO₂e", "label": "önlenmiş emisyon" },
+        { "target": "10+", "unit": "şehir", "label": "Türkiye geneli kapsama" }
+      ]
+    }
+  },
+  "HakkimizdaPage": {
+    "hero": {
+      "title1": "Gıda israfına karşı,",
+      "title2": "birlikte.",
+      "subtitle": "Rescued, herkesi gıda israfıyla mücadeleye davet eden bir sosyal etki girişimidir."
+    },
+    "vision": "Gıdanın israf edilmediği bir Türkiye hayal ediyoruz.",
+    "impact": {
+      "label": "Etki",
+      "title": "Topluluğumuzun yarattığı fark",
+      "subtitle": "Her öğün gerçek bir hikâye. İşte o hikâyenin sayısal özeti.",
+      "counter1": "Kurtarılan Öğün",
+      "counter1sub": "ve her gün artıyor",
+      "counter2": "Kayıtlı Kullanıcı",
+      "counter2sub": "aktif topluluk üyesi",
+      "counter3": "Partner İşletme",
+      "counter3sub": "Türkiye genelinde",
+      "disclaimer": "* Veriler gerçekçi placeholder değerler içermektedir."
+    },
+    "story": {
+      "label": "Hikâyemiz",
+      "title1": "Her şey sıradan bir",
+      "title2": "akşamla başladı.",
+      "p1": "Mahalledeki fırın kapanmak üzereydi, vitrin doluydu — ama kalanların bir kısmı çöpe gidecekti. Bu görüntü bize bir soru sordu:",
+      "quote": "Bu neden böyle olmalı?",
+      "p2": "Türkiye'de her yıl milyonlarca ton gıda israf ediliyor. Çözüm, zincirin tamamını değiştirmeyi gerektirmiyordu — sadece son birkaç saate odaklanmak yeterliydi.",
+      "readMore": "Devamını oku",
+      "timeline": [
+        { "year": "2023", "title": "Fikir doğdu", "desc": "İstanbul'da ilk araştırmalar ve problem keşfi." },
+        { "year": "2024", "title": "İlk partnerler", "desc": "Beşiktaş ve Kadıköy'de 12 pilot işletme ile başladık." },
+        { "year": "2025", "title": "Büyüme", "desc": "3 şehir, 340+ işletme, 47.000+ kurtarılan öğün." }
+      ],
+      "allTimeline": "Tüm zaman çizelgesi"
+    },
+    "model": {
+      "label": "İş Modeli",
+      "title": "Kazan · Kazan · Kazan",
+      "subtitle": "Rescued'da hiçbir taraf fedakârlık yapmaz. Her paket üç taraf için de net kazanç üretir.",
+      "items": [
+        {
+          "who": "İşletmeler",
+          "title": "Fazlası gelire dönüşür",
+          "desc": "Gün sonu atılacak ürünler ek gelir kaynağına ve yeni müşteri kazanımına dönüşür."
+        },
+        {
+          "who": "Kullanıcılar",
+          "title": "Uygun fiyata iyi yemek",
+          "desc": "Kaliteli, taze yemeğe yarı fiyatına ulaşırken mahallelerindeki gizli lezzetleri keşfederler."
+        },
+        {
+          "who": "Gezegen",
+          "title": "Her paketle bir nefes",
+          "desc": "Kurtarılan her paket, önlenen CO₂e emisyonu ve korunan doğal kaynaklar demektir."
+        }
+      ],
+      "climateTitle": "Gıda israfı ve iklim krizi",
+      "climateDesc": "Gıda israfını azaltmak, bireylerin iklim kriziyle mücadelede alabileceği en etkili aksiyonlardan biridir. Dünyada üretilen gıdanın üçte biri hiç tüketilmeden atılıyor ve bu süreç küresel sera gazı emisyonlarının yaklaşık %8–10'undan sorumlu. Her Sürpriz Paket bu döngüyü kırar.",
+      "climateSource": "Kaynak: FAO (2011), IPCC AR6 (2022) — metodoloji detayları için",
+      "climateLink": "Sürdürülebilirlik sayfamıza",
+      "climateSuffix": "bakın."
+    },
+    "subpages": {
+      "impactReport": {
+        "title": "Etki Raporumuz",
+        "desc": "Kurtarılan öğünler, önlenen CO₂e ve su/enerji eşdeğerleri — rakamlarla etki."
+      },
+      "whereWeAre": {
+        "title": "Nerelerdeyiz?",
+        "desc": "Şu an hangi şehirlerde aktifiz ve yakında nereye genişliyoruz."
+      },
+      "esgTitle": "Sürdürülebilirlik, çalışma şeklimizdir",
+      "esgDesc": "Çevresel etki ölçümü, sosyal kapsayıcılık ve şeffaf yönetişim Rescued'ın DNA'sında var. Yıllık etki raporlarımız, metodolojimizi ve hedeflerimizi kamuoyuyla paylaşır.",
+      "esgLabel": "ESG Yaklaşımı",
+      "esgLink1": "Sürdürülebilirlik",
+      "esgLink2": "Etki Raporu",
+      "explore": "Keşfet"
+    },
+    "team": {
+      "label": "Ekibimiz",
+      "title": "Bu işi kim yapıyor?",
+      "subtitle": "Gıda israfına karşı savaşmak için bir araya geldik.",
+      "viewAll": "Tüm Ekibi & Danışma Kurulunu Gör"
+    },
+    "cta": {
+      "title": "Her öğün değerli.",
+      "subtitle": "Uygulamayı indir, yakınındaki Sürpriz Paketleri keşfet — ya da işletmeni Rescued ailesine katmak için hemen başvur.",
+      "businessLink": "İşletmeni kaydet"
+    }
+  },
+  "HikayemizPage": {
+    "hero": {
+      "title": "Hikâyemiz",
+      "subtitle": "Sıradan bir akşam gözleminden başlayarak 47.000+ kurtarılan öğüne uzanan yolculuk."
+    },
+    "opening": {
+      "quote": "Bu neden böyle olmalı?",
+      "text": "2023'ün soğuk bir şubat akşamında İstanbul'da bir fırın vitrini bize bu soruyu sordu. Doludan boşa dönen raflar, çöpe gidecek lezzetler. Bu sorudan Rescued doğdu."
+    },
+    "timeline": {
+      "label": "Kilometre Taşları",
+      "title": "Fikrinden bugüne, adım adım",
+      "subtitle": "Küçük bir gözlemden ölçeklenebilir bir platforma uzanan gerçek yolculuk.",
+      "events": [
+        {
+          "year": "Şubat 2023",
+          "title": "Sorun fark edildi",
+          "badge": "Başlangıç",
+          "description": "İstanbul Beşiktaş'ta bir fırın vitrininin kapanışta nasıl boşaltıldığını izlemek her şeyi değiştirdi. Araştırmalar başladı: Türkiye'de yıllık gıda israfı, hangi sektörler, hangi çözümler."
+        },
+        {
+          "year": "Mayıs 2023",
+          "title": "İlk prototip",
+          "description": "Tek bir mahallede, 5 işletmeyle manuel test: WhatsApp grubu, günlük paket bildirimi, kullanıcı geri bildirimi. Konsept doğrulandı — insanlar hem istedi hem de geldiler."
+        },
+        {
+          "year": "Eylül 2023",
+          "title": "Ekip kuruldu",
+          "badge": "Ekip",
+          "description": "Dört ortak bir araya geldi. Teknoloji, işletme ilişkileri, ürün tasarımı ve sürdürülebilirlik alanlarında uzman bir çekirdek ekip. İlk yatırım turu başladı."
+        },
+        {
+          "year": "Ocak 2024",
+          "title": "İlk uygulama versiyonu",
+          "description": "Beta uygulaması Beşiktaş ve Kadıköy'de 12 partner işletme ile yayına girdi. İlk haftada 340 paket kurtarıldı. Kullanıcı memnuniyet skoru 4.7/5."
+        },
+        {
+          "year": "Haziran 2024",
+          "title": "Ankara & İzmir'e açıldık",
+          "badge": "Büyüme",
+          "description": "İstanbul başarısı sonrası Ankara ve İzmir operasyonları hayata geçti. 80 yeni partner işletme onboarding sürecini tamamladı. Toplamda 120+ aktif işletmeye ulaşıldı."
+        },
+        {
+          "year": "Aralık 2024",
+          "title": "10.000. öğün kurtarıldı",
+          "description": "Önemli bir kilometre taşı: 10.000. kurtarılan öğün. Topluluk büyümeye devam etti. Etki raporu yayınlandı, CO₂e metodolojisi bağımsız olarak doğrulandı."
+        },
+        {
+          "year": "2025",
+          "title": "Ölçekleme ve yeni özellikler",
+          "badge": "Bugün",
+          "description": "340+ işletme, 18.500+ kullanıcı, 47.000+ kurtarılan öğün. Yeni şehirlere açılım planları hazırlanıyor. Kurumsal ESG paketleri ve B2B çözümler geliştiriliyor."
+        }
+      ]
+    },
+    "missionBand": {
+      "headline": "Bu hikâye henüz bitmedi.",
+      "text": "Her yeni şehir, her yeni işletme, her kurtarılan paket bu hikâyenin bir sonraki sayfası. Sen de bu hikâyenin bir parçasısın.",
+      "cta1": "Uygulamayı Bekle",
+      "cta2": "İşletmeni Kaydet"
+    },
+    "related": {
+      "next": "Sıradaki",
+      "impactReport": "Etki Raporumuz",
+      "explore": "Keşfet",
+      "ourTeam": "Ekibimiz"
+    }
+  },
+  "EtkiRaporuPage": {
+    "hero": {
+      "title": "Etki Raporu",
+      "subtitle": "Topluluğumuzun yarattığı gerçek fark. Ölçülebilir, şeffaf, doğrulanabilir."
+    },
+    "highlights": {
+      "label": "2024 Özeti",
+      "title": "Öne çıkan rakamlar",
+      "items": [
+        {
+          "value": "47.820",
+          "unit": "öğün",
+          "label": "Kurtarılan Öğün",
+          "desc": "Türkiye'de açlık sınırı altında yaşayan bireylerin aylık besin ihtiyacının ~1.600 katı."
+        },
+        {
+          "value": "12.400",
+          "unit": "kg CO₂e",
+          "label": "Önlenen Emisyon",
+          "desc": "Yaklaşık 850 uçuş saatinin karbonunu telafi etmeye eşdeğer bir tasarruf."
+        },
+        {
+          "value": "6.800",
+          "unit": "litre",
+          "label": "Korunan Su",
+          "desc": "Kurtarılan gıdanın üretiminde kullanılan su miktarı — bu su tekrar doğaya kazandırıldı."
+        },
+        {
+          "value": "4.200",
+          "unit": "kWh",
+          "label": "Tasarruf Edilen Enerji",
+          "desc": "Atılmayan gıda üretiminin gerektireceği enerji miktarı."
+        }
+      ]
+    },
+    "charts": {
+      "label": "Görsel Analiz",
+      "title": "Etki verileri, görsel olarak",
+      "subtitle": "Aylık büyüme, şehir bazlı dağılım ve sektör kırılımı.",
+      "placeholder": "Grafik buraya gelecek",
+      "items": [
+        { "title": "Aylık Kurtarılan Öğün", "type": "Çizgi Grafik" },
+        { "title": "Şehir Bazlı Dağılım", "type": "Pasta Grafik" },
+        { "title": "Sektör Kırılımı", "type": "Bar Grafik" }
+      ]
+    },
+    "sdg": {
+      "label": "BM SKH",
+      "title": "Sürdürülebilir Kalkınma Hedefleri",
+      "subtitle": "Rescued'ın faaliyetleri Birleşmiş Milletler'in aşağıdaki SKH'leriyle doğrudan örtüşmektedir.",
+      "goals": [
+        { "number": "2", "title": "Açlığa Son" },
+        { "number": "12", "title": "Sorumlu Tüketim" },
+        { "number": "13", "title": "İklim Eylemi" },
+        { "number": "17", "title": "Güçlü Ortaklıklar" }
+      ]
+    },
+    "reports": {
+      "label": "Arşiv",
+      "title": "Yıllık raporları indir",
+      "pdfButton": "PDF",
+      "disclaimer": "* PDF raporlar lansman sonrası yayınlanacaktır.",
+      "items": [
+        {
+          "year": "2024",
+          "title": "Rescued Etki Raporu 2024",
+          "desc": "İlk tam yıl etki değerlendirmesi. Metodoloji, şehir bazlı dağılım, sektör analizi.",
+          "badge": "Yeni"
+        },
+        {
+          "year": "2023",
+          "title": "Rescued Etki Raporu 2023",
+          "desc": "Kuruluş yılı pilot verileri. Metodoloji temelleri ve ilk öğrenimler.",
+          "badge": ""
+        }
+      ]
+    },
+    "cta": {
+      "title": "Metodolojimizi incele",
+      "desc": "CO₂e hesaplama yöntemi, veri kaynakları ve doğrulama sürecimiz hakkında daha fazla bilgi al.",
+      "button": "Sürdürülebilirlik Sayfası"
+    }
+  },
+  "NerelerdeyizPage": {
+    "hero": {
+      "title": "Nerelerdeyiz?",
+      "subtitle": "Şu an İstanbul, Ankara ve İzmir'de aktifiz. Türkiye'nin her köşesine ulaşana kadar büyümeye devam edeceğiz."
+    },
+    "map": {
+      "label": "Harita",
+      "title": "Türkiye'de Rescued",
+      "subtitle": "Zeytin yeşili noktalar aktif şehirleri gösteriyor."
+    },
+    "activeCities": {
+      "label": "Aktif Şehirler",
+      "title": "Şu an neredeyiz?",
+      "active": "Aktif",
+      "since": "dan beri",
+      "businessCount": "işletme",
+      "districts": "İlçeler"
+    },
+    "comingSoon": {
+      "label": "Büyüme Planı",
+      "title": "Yakında bu şehirlerdeyiz",
+      "subtitle": "Türkiye'nin her köşesine ulaşmak için büyümeye devam ediyoruz."
+    },
+    "notify": {
+      "title": "Şehrim yok, haber ver!",
+      "desc": "Şehrinde Rescued yoksa e-postanı bırak. Yakında geldiğimizde ilk seni haberdar edelim — sen de ilk öğünü kurtaran olasın."
+    },
+    "businessCta": {
+      "title": "Şehrinde işletmeni kaydet",
+      "desc": "Aktif ya da yakında açılacak bir şehirdeysen, işletmeni hemen kaydet — lansmanla birlikte sistemde hazır ol.",
+      "button": "İşletmeni Kaydet"
+    }
+  },
+  "EkipPage": {
+    "hero": {
+      "title": "Ekibimiz",
+      "subtitle": "Gıda israfına karşı savaşmak için bir araya gelen insanlar."
+    },
+    "founders": {
+      "label": "Kurucu Ekip",
+      "title": "Rescued'ı kuranlar"
+    },
+    "teamSection": {
+      "label": "Ekip",
+      "title": "Birlikte inşa ediyoruz",
+      "subtitle": "Her biri alanında uzman, aynı misyona bağlı."
+    },
+    "advisors": {
+      "label": "Danışma Kurulu",
+      "title": "Bize rehberlik edenler"
+    },
+    "careerCta": {
+      "title": "Sen de bu ekibe katıl",
+      "desc": "Gıda israfıyla mücadelede yer almak istiyorsan açık pozisyonlarımıza göz at.",
+      "button": "Kariyer Sayfası"
+    }
+  },
+  "IsletmelerPage": {
+    "hero": {
+      "title1": "Fazlanız çöpe değil,",
+      "title2": "kasanıza gitsin.",
+      "subtitle": "Her akşam çöpe giden o raf fazlası ek gelire dönüşebilir. Rescued ile Sürpriz Paketi yayına almak 5 dakika sürer.",
+      "cta1": "İşletmeni Kaydet",
+      "cta2": "Nasıl Çalışır?"
+    },
+    "problem": {
+      "label": "Gerçek Maliyet",
+      "title": "Çöpe giden sadece yemek değil",
+      "subtitle": "Her atılan ürün, hem üretim maliyeti hem de atık bertaraf maliyeti demektir. İşletmeler çoğunlukla iki kez kaybeder.",
+      "stats": [
+        { "value": "~%30", "label": "Üretilen gıdanın ortalama israf oranı" },
+        { "value": "2x", "label": "Kayıp: üretim maliyeti + atık bertaraf" },
+        { "value": "Sıfır", "label": "Rescued'da atılacak ürün → satılmış gelir" }
+      ]
+    },
+    "howItWorks": {
+      "label": "Süreç",
+      "title": "Sürpriz Paket modeli nasıl işliyor?",
+      "subtitle": "Dört adımda gün sonu fazlanız gelire dönüşür.",
+      "steps": [
+        { "title": "Fazlanı paketle", "desc": "Gün sonu kalan ürünleri 'Sürpriz Paket' olarak koy. Ne koyduğunu senin belirleyebilirsin." },
+        { "title": "Teslim saatini sen belirle", "desc": "Günlük adet ve teslim saat aralığını kendin ayarlarsın. Panel üzerinden saniyeler içinde güncelle." },
+        { "title": "Yakın müşterilere ulaş", "desc": "Rescued kullanıcıları seni keşfeder, rezerve eder ve belirlediğin saatte kapına gelir." },
+        { "title": "İsrafını ve maliyetini düşür", "desc": "Atılacak ürünler gelire dönüşür, atık bertaraf masrafın azalır, yeni müşteri kazanırsın." }
+      ]
+    },
+    "income": {
+      "exampleLabel": "Örnek Senaryo",
+      "title": "Atılacak ürün, günlük ek gelire dönüşür",
+      "desc": "Her gün kapanış öncesinde 5 Sürpriz Paket hazırlayan bir pastane, haftada yaklaşık 700-900 ₺ ek gelir elde edebilir — tamamen yoktan yaratılmış bir kaynak.",
+      "benefits": [
+        "Atık bertaraf masrafın azalır",
+        "Yeni müşteri kazanım maliyeti sıfır",
+        "Panelden her şey anlık takip edilir"
+      ],
+      "calcTitle": "Tahmini Aylık Gelir",
+      "rows": [
+        { "label": "Günlük paket sayısı", "value": "5 paket" },
+        { "label": "Paket başı ortalama fiyat", "value": "65 ₺" },
+        { "label": "Aylık brüt gelir", "value": "~9.750 ₺" },
+        { "label": "Platform komisyonu (~%15)", "value": "~1.463 ₺" },
+        { "label": "Net kazanç", "value": "~8.287 ₺" }
+      ],
+      "calcDisclaimer": "* Tahmini örnek değerlerdir. Gerçek kazanç işletme tipine ve lokasyona göre değişir."
+    },
+    "growth": {
+      "label": "Büyüme",
+      "title": "Sürpriz Paket, bir tanışma daveti",
+      "subtitle": "Paketi almaya gelen kullanıcıların önemli bir kısmı ek alışveriş yapar ya da düzenli müşteriye dönüşür. Rescued, yeni kitleye açılan bir penceredir.",
+      "disclaimer": "* Placeholder değerler. Canlı veriler lansman sonrası güncellenecektir.",
+      "stats": [
+        { "stat": "%68", "desc": "Kullanıcı memnuniyeti ile işletmeye tekrar ziyaret" },
+        { "stat": "3.2x", "desc": "Sürpriz Paket kullanıcısının ortalama işletme keşfi" },
+        { "stat": "4.8★", "desc": "Rescued işletme paneli kullanıcı puanı" }
+      ]
+    },
+    "businessTypes": {
+      "label": "Sektörler",
+      "title": "Her tür işletmeye uygun çözüm",
+      "subtitle": "Fırından markete, kafeden toptancıya — gıda satan her işletme Rescued'a katılabilir.",
+      "popular": "En Popüler",
+      "items": [
+        { "title": "Restoran", "desc": "Günlük menü artıklarını, porsiyon fazlalarını değerlendirin. Mutfak israfını sıfıra yaklaştırın." },
+        { "title": "Kafe & Pastane", "desc": "Gün sonu kek, kurabiye, sandviç ve içecekleri Sürpriz Paket'e dönüştürün. Taze ürün, taze gelir." },
+        { "title": "Market & Bakkal", "desc": "Son kullanma tarihi yaklaşan ürünleri, taze sebze-meyveleri indirimleniyle sahiple bulun." },
+        { "title": "Büfe & Açık Büfe", "desc": "Gün sonu hazır yemek ve atıştırmalıkları pakete koy, yeni müşterilerle tanış." },
+        { "title": "Toptancı & Üretici", "desc": "Küçük partileri, görünüm kusurlu ürünleri Rescued kanalıyla toplulukla buluş." }
+      ]
+    },
+    "panel": {
+      "label": "İşletme Paneli",
+      "title": "Her şey elinizin altında",
+      "desc": "Gerçek zamanlı satış takibi, kurtarılan öğün sayacı, önlenen CO₂e ve detaylı raporlar — hepsi tek panelde.",
+      "mockupLabel": "İşletme paneli ekran görüntüsü buraya gelecek",
+      "features": [
+        "Paket yayınla, düzenle, kapat — saniyeler içinde",
+        "Günlük, haftalık, aylık gelir raporları",
+        "Kurtarılan öğün ve CO₂e sayacı",
+        "Müşteri değerlendirmeleri ve puanlar"
+      ]
+    },
+    "faq": {
+      "label": "SSS",
+      "title": "Aklındaki soruları sormadan kayıt olmak zorunda değilsin",
+      "items": [
+        {
+          "question": "Sürpriz Pakete ne koymalıyım?",
+          "answer": "Gün sonu kalan, taze ve tüketilebilir her türlü gıdayı koyabilirsiniz. Ekmek, tatlı, sandviç, sıcak yemek, market ürünleri... Tek kural: güvenli ve tüketilebilir olması. İçeriği net belirtmek zorunda değilsiniz — 'sürpriz' olması ürünün bir parçası."
+        },
+        {
+          "question": "Komisyon nasıl işliyor?",
+          "answer": "Rescued, her satılan paketin satış fiyatından küçük bir platform komisyonu alır. Bu komisyon oranı kategoriye göre değişmekte olup kayıt sonrasında işletme panelinizde açıkça görüntülenir. Atılacak ürünler üzerinden elde edilen gelirde net kazanç hâlâ çok daha yüksektir."
+        },
+        {
+          "question": "Günlük kaç paket satabilirim?",
+          "answer": "İstediğiniz kadar. Günlük adet limitini kendiniz belirlersiniz — 1 paketten başlayabilir, yüzlerce pakete çıkabilirsiniz. İşletme panelinizden anlık olarak güncelleyebilirsiniz."
+        },
+        {
+          "question": "Gıda güvenliği sorumluluğu kimde?",
+          "answer": "Ürünlerin gıda güvenliği standartlarına uygun olması işletmenin sorumluluğundadır. Mevcut gıda işletmesi lisansınız geçerli olmaya devam eder. Rescued, güvenli ve tüketilebilir ürünlerin satışa sunulmasını platform kuralı olarak şart koşar."
+        },
+        {
+          "question": "Ödemeler ne zaman yapılır?",
+          "answer": "Ödemeler haftalık olarak hesabınıza aktarılır. İşletme panelinde gerçek zamanlı satış ve gelir takibi yapabilirsiniz."
+        },
+        {
+          "question": "Kaydı tamamlamak ne kadar sürer?",
+          "answer": "Online kayıt formu yaklaşık 5 dakika sürer. Ekibimiz başvurunuzu 24-48 saat içinde inceler ve onay sonrasında işletme paneliniz aktif hale gelir. İlk paketinizi aynı gün yayına alabilirsiniz."
+        },
+        {
+          "question": "Fiyatı ben mi belirlerim?",
+          "answer": "Evet, ama bir minimum indirim kuralı var: Sürpriz Paket, içeriğin normal piyasa değerinin en az %50 altında fiyatlanmalıdır. Bu kural, Rescued'ın kullanıcı vaadini koruması içindir. Birçok işletme %60-70 indirimle yayına giriyor ve hızla satıyor."
+        },
+        {
+          "question": "Paneli kullanmak zor mu?",
+          "answer": "Panel son derece basit tutulmuştur. Paket oluştur, adet gir, saat aralığı belirle — hepsi bu. Telefon ve tablet uyumlu, teknik bilgi gerektirmez. Destek ekibimiz ilk kurulum için her zaman hazır."
+        }
+      ]
+    },
+    "register": {
+      "label": "Hadi Başlayalım",
+      "title": "İşletmeni Rescued'a kaydet",
+      "subtitle": "Formu doldurun, ekibimiz 24 saat içinde sizi arasın."
+    }
+  },
+  "SSSPage": {
+    "hero": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "Aklındaki sorunun cevabını burada bulamazsan, bize yaz."
+    },
+    "userFaqsLabel": "Kullanıcılar için",
+    "userFaqsTitle": "Uygulama ve Sürpriz Paket Hakkında",
+    "notFoundText": "Cevap bulamadın mı?",
+    "notFoundCta": "Bize Yaz",
+    "businessOwner": "İşletme sahibi misin?",
+    "businessFaqLink": "İşletmelere özel SSS →",
+    "faqs": [
+      {
+        "question": "Sürpriz Paket nedir?",
+        "answer": "Sürpriz Paket, yerel işletmelerin gün sonu satılamayan ama tamamen taze ve tüketilebilir ürünlerini büyük indirimle sana sunan bir kurtarma paketidir. İçerik her gün farklıdır — bu da eğlencenin bir parçası."
+      },
+      {
+        "question": "Paketi nereden alabilirim?",
+        "answer": "Uygulamayı indirip konumuna izin verdiğinde, yakınındaki tüm aktif Sürpriz Paket işletmelerini haritada görebilirsin. Tercih ettiğin paketi rezerve edip, belirlenen saatte işletmeye gitmen yeterli."
+      },
+      {
+        "question": "Pakette ne olduğunu önceden bileceğim mi?",
+        "answer": "Genel kategori (fırın ürünleri, tatlı, hazır yemek vb.) ile olası içerikler listelenir. Ama tam içerik her gün değişir — bu da sürprizin ve keşfin tadıdır."
+      },
+      {
+        "question": "Alerjen ürün var mı?",
+        "answer": "İşletmeler temel alerjen bilgilerini (gluten, süt, yumurta, kuruyemiş vb.) profilde belirtmekle yükümlüdür. Ciddi alerjiniz varsa, rezervasyon öncesinde işletmeyle doğruca iletişime geçebilirsin."
+      },
+      {
+        "question": "Ödeme güvenli mi?",
+        "answer": "Evet. Tüm ödemeler Rescued altyapısı üzerinden güvenli şekilde işlenir. Kart bilgilerin işletmeyle paylaşılmaz."
+      },
+      {
+        "question": "Paketi iptal edebilir miyim?",
+        "answer": "Teslim saatinden en az 2 saat önce iptal ettiğinde tam iade alırsın. Sonraki iptallerde iade politikası uygulamada detaylandırılmıştır."
+      },
+      {
+        "question": "İşletme kapalıysa ne olur?",
+        "answer": "Böyle bir durumda tam iade yapılır ve destek ekibimiz seni bilgilendirir. Tekrarlayan güvenilirlik sorunları olan işletmeler platformdan kaldırılır."
+      },
+      {
+        "question": "Kaç paket alabiliririm?",
+        "answer": "Şu an her kullanıcı, bir işletmeden günde 1 paket alabilir. Bu kural, fırsatın toplulukla adil paylaşılması içindir."
+      }
+    ]
+  },
+  "IletisimPage": {
+    "hero": {
+      "title": "İletişim",
+      "subtitle": "Bir sorun mu var, bir fikrin mi var? Her mesaj okunur."
+    },
+    "form": {
+      "label": "Bize Ulaş",
+      "title": "Mesajını gönder"
+    },
+    "info": {
+      "label": "Bilgiler",
+      "title": "İletişim Bilgileri",
+      "email": "E-posta",
+      "emailValue": "merhaba@rescued.com.tr",
+      "address": "Adres",
+      "addressValue": "İstanbul, Türkiye",
+      "responseTime": "Yanıt süresi",
+      "responseTimeValue": "Genellikle 24 saat içinde",
+      "businessNote": "İşletme kaydı için ayrı bir form var —",
+      "businessLink": "buradan başvur"
+    }
+  },
+  "BasinPage": {
+    "hero": {
+      "title": "Basın",
+      "subtitle": "Basın kiti, logo dosyaları ve medya sorguları için doğru adrestesiniz."
+    },
+    "kit": {
+      "label": "Basın Kiti",
+      "title": "Medya kaynakları",
+      "downloadLabel": "indir",
+      "items": [
+        { "title": "Logo Paketi", "desc": "SVG, PNG — beyaz, renkli, koyu zemin versiyonları" },
+        { "title": "Marka Rehberi", "desc": "Renkler, tipografi, kullanım kuralları" },
+        { "title": "Basın Bülteni", "desc": "Şirket profili ve lansman açıklaması" },
+        { "title": "Fotoğraf Galerisi", "desc": "Yüksek çözünürlüklü ürün görselleri" }
+      ]
+    },
+    "contact": {
+      "title": "Medya soruları için",
+      "desc": "Röportaj, alıntı talebi veya basın soruları için bize ulaşın.",
+      "email": "basin@rescued.com.tr"
+    }
+  },
+  "KariyerPage": {
+    "hero": {
+      "title": "Kariyer",
+      "subtitle": "Gıda israfıyla mücadele eden, gerçek etki yaratan bir ekibin parçası olmak ister misin?"
+    },
+    "positions": {
+      "label": "Açık Pozisyonlar",
+      "title": "Ekibimize katıl",
+      "fullTime": "Tam Zamanlı",
+      "items": [
+        { "title": "Senior Mobile Developer (React Native)", "location": "İstanbul / Remote" },
+        { "title": "Growth & Community Manager", "location": "İstanbul" },
+        { "title": "İşletme İlişkileri Uzmanı", "location": "İstanbul / Ankara / İzmir" },
+        { "title": "UX Designer", "location": "Remote" }
+      ]
+    },
+    "spontaneous": {
+      "title": "Aradığın pozisyon listede yok mu?",
+      "desc": "Spontan başvurulara açığız. CV'ni ve kısa bir motivasyon mektubunu gönder.",
+      "cta": "Spontan Başvuru"
+    }
+  }
+}
