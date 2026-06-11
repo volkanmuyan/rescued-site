@@ -1,22 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { CheckCircle2, XCircle, Package, MapPin, Clock, Smile } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { RescuedBadge } from "@/components/RescuedBadge";
 import { AppButtons } from "@/components/AppButtons";
-import { Link } from "@/i18n/navigation";
 
-const stepIcons = [MapPin, Package, Clock, Smile];
+const canContain = [
+  "Fırın ürünleri: ekmek, simit, poğaça, börek",
+  "Tatlılar: kek, kurabiye, pasta dilimleri, baklava",
+  "Hazır yemekler: sıcak servis artıkları, porsiyonlar",
+  "Sandviç ve wrap çeşitleri",
+  "Meyve, sebze ve market ürünleri",
+  "İçecekler: suyu, ayranı, meyve suyu vb.",
+  "Kahvaltılık ürünler: peynir, zeytin, reçel vb.",
+];
+
+const cannotContain = [
+  "Son kullanma tarihi geçmiş ürünler",
+  "Görünür şekilde bozulmuş veya küflenmiş gıdalar",
+  "Alkollü içecekler",
+  "Gıda dışı ürünler",
+];
+
+const steps = [
+  { icon: MapPin, title: "Yakınındaki paketi bul", desc: "Uygulamayı aç, konumuna en yakın Sürpriz Paketleri listele. Harita veya liste görünümü, tercihine göre." },
+  { icon: Package, title: "Paketini seç ve öde", desc: "Beğendiğin işletmenin paketini seç. Uygulama içinden güvenle öde, onayın anında gelir." },
+  { icon: Clock, title: "Belirtilen saatte git", desc: "İşletmenin belirlediği teslim saat aralığında işletmeye git. Genellikle kapanış öncesi 1-2 saatlik pencere." },
+  { icon: Smile, title: "Sürprizi keşfet!", desc: "Paketi al, eve git, içindekileri keşfet. Her paket farklı — bu da eğlencenin bir parçası." },
+];
 
 export default function SurprizPaketPage() {
-  const t = useTranslations("SurprizPaketPage");
-
-  const canContain = t.raw("concept.canContain") as string[];
-  const cannotContain = t.raw("concept.cannotContain") as string[];
-  const steps = t.raw("howTo.steps") as Array<{ title: string; desc: string }>;
-
   return (
     <>
       <section className="pt-32 pb-20 bg-ink relative overflow-hidden">
@@ -25,10 +40,11 @@ export default function SurprizPaketPage() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center gap-6">
             <RescuedBadge size="lg" className="!bg-white/15 border border-white/20" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
-              {t("hero.title")}
+              Sürpriz Paket Nedir?
             </h1>
             <p className="text-lg text-white/70 max-w-xl leading-relaxed">
-              {t("hero.subtitle")}
+              Yerel işletmelerin gün sonu satılamayan ama tamamen taze ve lezzetli ürünlerini
+              büyük indirimle sana sunan bir kurtarma paketi.
             </p>
           </motion.div>
         </div>
@@ -37,16 +53,16 @@ export default function SurprizPaketPage() {
       <section className="section-padding bg-cream">
         <div className="container-wide mx-auto max-w-4xl">
           <SectionHeading
-            label={t("concept.label")}
-            title={t("concept.title")}
-            subtitle={t("concept.subtitle")}
+            label="Konsept"
+            title="Her gün yüzlerce yemek çöpe gidiyor"
+            subtitle="Fırınlar, pastaneler, restoranlar ve marketler kapanışta artakalan ürünleri atmak zorunda kalıyor. Sürpriz Paket, bu ürünleri sana ulaştırır — hem ucuza hem de gezegenin iyiliğine."
           />
 
           <div className="grid sm:grid-cols-2 gap-8">
             <div className="bg-white rounded-3xl p-8 shadow-soft">
               <h3 className="text-lg font-black text-ink mb-5 flex items-center gap-2">
                 <CheckCircle2 size={20} className="text-olive" />
-                {t("concept.canContainTitle")}
+                Pakette neler olabilir?
               </h3>
               <ul className="space-y-3">
                 {canContain.map((item, i) => (
@@ -60,7 +76,7 @@ export default function SurprizPaketPage() {
             <div className="bg-white rounded-3xl p-8 shadow-soft">
               <h3 className="text-lg font-black text-ink mb-5 flex items-center gap-2">
                 <XCircle size={20} className="text-terracotta" />
-                {t("concept.cannotContainTitle")}
+                Pakette neler olamaz?
               </h3>
               <ul className="space-y-3">
                 {cannotContain.map((item, i) => (
@@ -72,7 +88,8 @@ export default function SurprizPaketPage() {
               </ul>
               <div className="mt-6 p-4 bg-cream rounded-2xl">
                 <p className="text-xs text-ink/50 leading-relaxed">
-                  {t("concept.safetyNote")}
+                  Tüm Rescued işletmeleri platform kurallarını kabul ederek kayıt olur.
+                  Güvenli olmayan ürün bildirimleri 24 saat içinde incelenir.
                 </p>
               </div>
             </div>
@@ -82,43 +99,41 @@ export default function SurprizPaketPage() {
 
       <section className="section-padding bg-cream-dark">
         <div className="container-wide mx-auto max-w-4xl">
-          <SectionHeading label={t("howTo.label")} title={t("howTo.title")} />
+          <SectionHeading label="İlk Paketin" title="İlk Sürpriz Paketini nasıl kurtarırsın?" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {steps.map((step, i) => {
-              const Icon = stepIcons[i];
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-white rounded-3xl p-7 shadow-soft text-center"
-                >
-                  <div className="w-12 h-12 rounded-2xl bg-olive/10 text-olive flex items-center justify-center mb-4 mx-auto">
-                    <Icon size={22} />
-                  </div>
-                  <h3 className="font-black text-ink mb-2">{step.title}</h3>
-                  <p className="text-sm text-ink/60 leading-relaxed">{step.desc}</p>
-                </motion.div>
-              );
-            })}
+            {steps.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white rounded-3xl p-7 shadow-soft text-center"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-olive/10 text-olive flex items-center justify-center mb-4 mx-auto">
+                  <step.icon size={22} />
+                </div>
+                <h3 className="font-black text-ink mb-2">{step.title}</h3>
+                <p className="text-sm text-ink/60 leading-relaxed">{step.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="section-padding bg-cream">
         <div className="container-wide mx-auto max-w-2xl text-center">
-          <SectionHeading label={t("pricing.label")} title={t("pricing.title")} />
+          <SectionHeading label="Fiyatlandırma" title="Ne kadar ödeyeceğim?" />
           <div className="bg-white rounded-3xl p-8 shadow-soft mb-8">
             <p className="text-ink/70 leading-relaxed mb-6">
-              {t("pricing.desc")}
+              Her Sürpriz Paket, içeriğin normal piyasa değerinin <strong className="text-olive">en az %50 altında</strong> fiyatlanır.
+              Bir işletmenin 150 ₺&apos;lik ürünleri genellikle 40-70 ₺&apos;ye Sürpriz Paket olarak sunulur.
             </p>
             <div className="grid grid-cols-3 gap-4 text-center">
               {[
-                { label: t("pricing.avgValue"), value: t("pricing.avgValueNum") },
-                { label: t("pricing.avgPrice"), value: t("pricing.avgPriceNum") },
-                { label: t("pricing.avgSaving"), value: t("pricing.avgSavingNum") },
+                { label: "Ortalama paket değeri", value: "120-200 ₺" },
+                { label: "Ortalama paket fiyatı", value: "45-80 ₺" },
+                { label: "Ortalama tasarruf", value: "%55-70" },
               ].map((item, i) => (
                 <div key={i} className="bg-cream rounded-2xl p-4">
                   <div className="text-xl font-black text-olive">{item.value}</div>
@@ -128,9 +143,9 @@ export default function SurprizPaketPage() {
             </div>
           </div>
           <AppButtons showLabel={true} />
-          <p className="mt-4 text-sm text-ink/40">{t("pricing.appNote")}</p>
+          <p className="mt-4 text-sm text-ink/40">Uygulama yakında — bekleme listesine katıl</p>
           <Link href="/#bekleme-listesi" className="text-olive text-sm font-bold hover:underline mt-2 inline-block">
-            {t("pricing.waitlistLink")}
+            Bekleme Listesi →
           </Link>
         </div>
       </section>

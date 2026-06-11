@@ -1,18 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { Download, Mail } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { RescuedBadge } from "@/components/RescuedBadge";
 
-const kitIcons = ["🎨", "📐", "📄", "📸"];
-
 export default function BasinPage() {
-  const t = useTranslations("BasinPage");
-
-  const kitItems = t.raw("kit.items") as Array<{ title: string; desc: string }>;
-
   return (
     <>
       <section className="pt-32 pb-20 bg-ink relative overflow-hidden">
@@ -21,10 +14,10 @@ export default function BasinPage() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center gap-6">
             <RescuedBadge size="lg" className="!bg-white/15 border border-white/20" />
             <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight">
-              {t("hero.title")}
+              Basın
             </h1>
             <p className="text-lg text-white/70">
-              {t("hero.subtitle")}
+              Basın kiti, logo dosyaları ve medya sorguları için doğru adrestesiniz.
             </p>
           </motion.div>
         </div>
@@ -32,10 +25,15 @@ export default function BasinPage() {
 
       <section className="section-padding bg-cream">
         <div className="container-wide mx-auto max-w-3xl">
-          <SectionHeading label={t("kit.label")} title={t("kit.title")} />
+          <SectionHeading label="Basın Kiti" title="Medya kaynakları" />
 
           <div className="grid sm:grid-cols-2 gap-6 mb-12">
-            {kitItems.map((item, i) => (
+            {[
+              { title: "Logo Paketi", desc: "SVG, PNG — beyaz, renkli, koyu zemin versiyonları", icon: "🎨" },
+              { title: "Marka Rehberi", desc: "Renkler, tipografi, kullanım kuralları", icon: "📐" },
+              { title: "Basın Bülteni", desc: "Şirket profili ve lansman açıklaması", icon: "📄" },
+              { title: "Fotoğraf Galerisi", desc: "Yüksek çözünürlüklü ürün görselleri", icon: "📸" },
+            ].map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 16 }}
@@ -45,16 +43,13 @@ export default function BasinPage() {
                 className="bg-white rounded-2xl p-6 shadow-soft flex items-center justify-between gap-4 group hover:shadow-soft-lg hover:-translate-y-0.5 transition-all"
               >
                 <div className="flex items-center gap-4">
-                  <span className="text-2xl">{kitIcons[i]}</span>
+                  <span className="text-2xl">{item.icon}</span>
                   <div>
                     <div className="font-bold text-ink">{item.title}</div>
                     <div className="text-sm text-ink/50">{item.desc}</div>
                   </div>
                 </div>
-                <button
-                  className="w-9 h-9 bg-olive/10 rounded-xl flex items-center justify-center text-olive hover:bg-olive hover:text-white transition-colors flex-shrink-0"
-                  aria-label={`${item.title} ${t("kit.downloadLabel")}`}
-                >
+                <button className="w-9 h-9 bg-olive/10 rounded-xl flex items-center justify-center text-olive hover:bg-olive hover:text-white transition-colors flex-shrink-0" aria-label={`${item.title} indir`}>
                   <Download size={16} />
                 </button>
               </motion.div>
@@ -66,10 +61,10 @@ export default function BasinPage() {
               <Mail size={22} className="text-olive" />
             </div>
             <div className="text-center sm:text-left">
-              <h3 className="font-black text-ink mb-1">{t("contact.title")}</h3>
-              <p className="text-ink/60 text-sm mb-3">{t("contact.desc")}</p>
-              <a href={`mailto:${t("contact.email")}`} className="text-olive font-bold hover:underline">
-                {t("contact.email")}
+              <h3 className="font-black text-ink mb-1">Medya soruları için</h3>
+              <p className="text-ink/60 text-sm mb-3">Röportaj, alıntı talebi veya basın soruları için bize ulaşın.</p>
+              <a href="mailto:basin@rescued.com.tr" className="text-olive font-bold hover:underline">
+                basin@rescued.com.tr
               </a>
             </div>
           </div>
